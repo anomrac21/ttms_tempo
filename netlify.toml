@@ -5,12 +5,12 @@
 [build.environment]
   HUGO_VERSION = "0.121.1"
   HUGO_ENV = "production"
-  # Don't let Netlify auto-clone submodules (it tries SSH and fails)
-  # Instead, let build.sh handle it with HTTPS config
-  GIT_SUBMODULE_STRATEGY = "none"
+  # Let Netlify clone submodules recursively during build
+  # build.sh will configure Git to use HTTPS for GitHub URLs
+  GIT_SUBMODULE_STRATEGY = "recursive"
 
 [context.production.environment]
-  GIT_SUBMODULE_STRATEGY = "none"
+  GIT_SUBMODULE_STRATEGY = "recursive"
 
 [[redirects]]
   from = "/*"
