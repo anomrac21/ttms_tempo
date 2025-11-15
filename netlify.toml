@@ -1,6 +1,8 @@
 [build]
   publish = "public"
-  command = "./build_menu.sh"
+  # Add SSH host key verification BEFORE build script runs
+  # This handles the "preparing repo" stage where Netlify clones the repository
+  command = "mkdir -p ~/.ssh && ssh-keyscan -H github.com >> ~/.ssh/known_hosts 2>/dev/null || true && ./build_menu.sh"
 
 [build.environment]
   HUGO_VERSION = "0.121.1"
@@ -8,6 +10,8 @@
   # Let Netlify clone submodules recursively during build
   # build_menu.sh will configure Git to use HTTPS for GitHub URLs
   GIT_SUBMODULE_STRATEGY = "recursive"
+  # Disable SSH strict host key checking (fallback if ssh-keyscan fails)
+  GIT_SSH_COMMAND = "ssh -o StrictHostKeyChecking=accept-new"
 
 [context.production.environment]
   GIT_SUBMODULE_STRATEGY = "recursive"
