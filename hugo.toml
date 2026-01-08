@@ -31,9 +31,9 @@ theme = '_menus_ttms'
   enabled = true
   apiUrl = "https://notify.ttmenus.com/api/v1"
   websocketUrl = "wss://notify.ttmenus.com/api/v1/ws/connect"
+  serviceUrl = "https://notify.ttmenus.com"
 
 [params.services]
-  onesignalid = ""
   analyticsid = {{ANALYTICS_ID}}
   notifications = true
 
