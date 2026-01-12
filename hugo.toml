@@ -1,6 +1,6 @@
-baseURL = 'https://{{CLIENT_NAME}}.ttmenus.com/'
+baseURL = 'https://tempo.ttmenus.com/'
 languageCode = 'en-tt'
-title = '{{SITE_TITLE}}'
+title = 'Tempo Nightclub'
 theme = '_menus_ttms'
 
 [params]
@@ -18,13 +18,13 @@ theme = '_menus_ttms'
 [params.content]
   enabled = true
   apiUrl = "https://content.ttmenus.com/api"
-  clientId = "ttms_{{CLIENT_NAME}}"
+  clientId = "ttms_tempo"
 
 # Ads Service Configuration
 [params.ads]
   enabled = true
   apiUrl = "https://ads.ttmenus.com/api/v1"
-  clientId = "ttms_{{CLIENT_NAME}}"
+  clientId = "ttms_tempo"
 
 # Notification Service Configuration
 [params.notifications]
@@ -34,7 +34,7 @@ theme = '_menus_ttms'
   serviceUrl = "https://notify.ttmenus.com"
 
 [params.services]
-  analyticsid = {{ANALYTICS_ID}}
+  analyticsid = 0
   notifications = true
 
 [params.features]
@@ -47,8 +47,8 @@ theme = '_menus_ttms'
   servicecharge = 0
   hastables = true
   usephonecall = false
-  whatsapp = {{WHATSAPP}}
-  phone = {{PHONE}}
+  whatsapp = 18687498776
+  phone = 18682398364
   
 # Social profiles
 [params.social]
@@ -56,8 +56,8 @@ theme = '_menus_ttms'
   instagram = ""
   tiktok = ""
   youtube = ""
-  email = "{{EMAIL}}"
-  phone = {{PHONE}}
+  email = "admin@tempoentertainmenttt.com"
+  phone = 18682398364
   
 [markup]
   [markup.goldmark]

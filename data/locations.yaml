@@ -1,51 +1,48 @@
 locations:
-  - address: My Address
-    city: Port of Spain
-    island: Trinidad
-    subcategories: 
-      - Restaurant
-      - Bar
-    latlon: [10.525849712311333,-61.40296428581248]
-    phone: 1868
-    whatsapp: 1868
-    orderingtables: ["Takeway Only"]
+  - address: "526 Southern Main Rd"
+    city: "San Fernando"
+    island: "Trinidad"
+    latlon: [10.243750,-6149617046185486.000000]
+    phone: "18682398364"
+    whatsapp: "18687498776"
+    subcategories: []
+    orderingtables: []
     delivery:
-      fooddrop: https://fooddropcaribbean.com/en/store/
     opening_hours:
-      mode: Auto
+      mode: "Auto"
       sun:
-        - type: Open
+        - type: "Open"
           time: "11:00"
-        - type: Close
+        - type: "Close"
           time: "22:00"
       mon:
-        - type: Open
+        - type: "Open"
           time: "11:00"
-        - type: Close
+        - type: "Close"
           time: "22:00"
       tue:
-        - type: Open
+        - type: "Open"
           time: "11:00"
-        - type: Close
+        - type: "Close"
           time: "22:00"
       wed:
-        - type: Open
+        - type: "Open"
           time: "11:00"
-        - type: Close
+        - type: "Close"
           time: "22:00"
       thu:
-        - type: Open
+        - type: "Open"
           time: "11:00"
-        - type: Close
+        - type: "Close"
           time: "22:00"
       fri:
-        - type: Open
+        - type: "Open"
           time: "11:00"
-        - type: Close
+        - type: "Close"
           time: "22:00"
       sat:
-        - type: Open
+        - type: "Open"
           time: "11:00"
-        - type: Close
+        - type: "Close"
           time: "22:00"
-  
+
