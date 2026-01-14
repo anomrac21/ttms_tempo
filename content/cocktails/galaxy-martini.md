@@ -1,13 +1,13 @@
 ---
 title: Galaxy Martini
 weight: 10
-date: 2026-01-14T18:00:38Z
+date: 2026-01-14T18:06:22Z
 prices:
   - size: "-"
     price: 60
     flavour: "-"
 tags: ["Galaxy Martini"]
-ingredients: ["Citrus", "Berry", "Vodka"]
+ingredients: ["Berry", "Vodka", "Citrus"]
 cookingmethods: []
 types: ["Cocktail"]
 events: []

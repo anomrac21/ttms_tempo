@@ -1,7 +1,7 @@
 ---
-title: Cîroc
+title: Ciroc
 weight: 10
-date: 2026-01-14T18:00:38Z
+date: 2026-01-14T18:06:22Z
 prices:
   - size: "Drink"
     price: 60
@@ -9,7 +9,7 @@ prices:
   - size: "Bottle"
     price: 870
     flavour: "-"
-tags: ["Cîroc"]
+tags: ["Ciroc"]
 ingredients: ["Vodka"]
 cookingmethods: []
 types: ["Vodka"]

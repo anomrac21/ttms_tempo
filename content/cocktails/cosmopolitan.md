@@ -1,13 +1,13 @@
 ---
 title: Cosmopolitan
 weight: 10
-date: 2026-01-14T18:00:38Z
+date: 2026-01-14T18:06:21Z
 prices:
   - size: "-"
     price: 60
     flavour: "-"
 tags: ["Cosmopolitan"]
-ingredients: ["Citrus", "Vodka", "Cranberry"]
+ingredients: ["Cranberry", "Vodka", "Citrus"]
 cookingmethods: []
 types: ["Cocktail"]
 events: []

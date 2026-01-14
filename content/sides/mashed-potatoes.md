@@ -1,7 +1,7 @@
 ---
 title: Mashed Potatoes
 weight: 10
-date: 2026-01-14T18:00:38Z
+date: 2026-01-14T18:06:22Z
 prices:
   - size: "-"
     price: 35

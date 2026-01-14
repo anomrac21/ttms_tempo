@@ -1,7 +1,7 @@
 ---
-title: Patrón Silver
+title: Patron Cafe
 weight: 10
-date: 2026-01-14T18:00:38Z
+date: 2026-01-14T18:06:22Z
 prices:
   - size: "Drink"
     price: 70
@@ -9,8 +9,8 @@ prices:
   - size: "Bottle"
     price: 900
     flavour: "-"
-tags: ["Patrón Silver"]
-ingredients: []
+tags: ["Patron Cafe"]
+ingredients: ["Premium Tequila"]
 cookingmethods: []
 types: ["Tequila"]
 events: []
