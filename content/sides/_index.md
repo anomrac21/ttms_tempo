@@ -1,5 +1,5 @@
 ---
 title: Sides
-weight: 10
-icon: https://ct.ttmenus.com/icons/food/icon-fries.webp
+weight: 8
+icon: https://cdn.ttmenus.com/icons/food/icon-sides.webp
 ---
