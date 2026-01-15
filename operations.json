@@ -1,54 +1,6 @@
 [
   {
     "Type": "update_category",
-    "ItemID": "sliders-and-tacos",
-    "Category": "",
-    "Data": {
-      "title": "Sliders And Tacos",
-      "weight": 9,
-      "icon": "https://cdn.ttmenus.com/icons/food/icon-taco.webp",
-      "image": "",
-      "body": ""
-    }
-  },
-  {
-    "Type": "update_category",
-    "ItemID": "ribs-and-grill",
-    "Category": "",
-    "Data": {
-      "title": "Ribs And Grill",
-      "weight": 5,
-      "icon": "https://cdn.ttmenus.com/icons/food/icon-ribs.webp",
-      "image": "",
-      "body": ""
-    }
-  },
-  {
-    "Type": "update_category",
-    "ItemID": "appetizers",
-    "Category": "",
-    "Data": {
-      "title": "Appetizers",
-      "weight": 10,
-      "icon": "https://cdn.ttmenus.com/icons/food/icon-wontons.webp",
-      "image": "",
-      "body": ""
-    }
-  },
-  {
-    "Type": "update_category",
-    "ItemID": "sides",
-    "Category": "",
-    "Data": {
-      "title": "Sides",
-      "weight": 8,
-      "icon": "https://cdn.ttmenus.com/icons/food/icon-sides.webp",
-      "image": "",
-      "body": ""
-    }
-  },
-  {
-    "Type": "update_category",
     "ItemID": "burgers-and-sandwiches",
     "Category": "",
     "Data": {
