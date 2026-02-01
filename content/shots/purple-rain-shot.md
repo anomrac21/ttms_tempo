@@ -1,15 +1,14 @@
 ---
-title: Beach Sex Shot Vodka
-weight: 10
-date: 2026-01-14T18:06:22Z
+title: Purple Rain Shot
+weight: 70
+date: 2026-01-27T19:00:00Z
 prices:
   - size: "-"
     price: 35
     flavour: "-"
-tags: ["Beach Sex Shot Vodka"]
+tags: ["Purple Rain Shot"]
 ingredients: ["Vodka"]
 cookingmethods: []
 types: ["Shot"]
 events: []
 ---
-
