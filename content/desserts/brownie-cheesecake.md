@@ -1,14 +1,14 @@
 ---
-title: Onion Rings
+title: Brownie Cheesecake
 prices:
   - variable1: "-"
     variable2: "-"
     price: 0
 tags:
-  - Side
+  - Dessert
 types:
-  - Side
+  - Dessert
 weight: 4
 ---
 
-Crispy onion rings.
+Brownie cheesecake.

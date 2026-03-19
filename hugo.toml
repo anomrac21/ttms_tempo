@@ -1,75 +1,24 @@
-baseURL = 'https://tempo.ttmenus.com/'
-languageCode = 'en-tt'
-title = 'Tempo Nightclub'
 theme = '_menus_ttms'
+languageCode = 'en-tt'
 
-[params]
-  authServiceUrl = "https://auth.ttmenus.com"
-  contentServiceUrl = "https://content.ttmenus.com"
-  adsServiceUrl = "https://ads.ttmenus.com"
-  notifyServiceUrl = "https://notify.ttmenus.com"
+# Project menu + theme system pages (login, update-ui, 404, admin, etc.)
+[module]
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "themes/_menus_ttms/content"
+    target = "content"
 
-# Auth Service Configuration
-[params.auth]
-  enabled = true
-  apiUrl = "https://auth.ttmenus.com/api/v1"
+title = 'Tempo Nightclub'
+baseURL = 'https://tempo.ttmenus.com/'
 
-# Content Service Configuration (for Update UI)
-[params.content]
-  enabled = true
-  apiUrl = "https://content.ttmenus.com/api"
-  clientId = "ttms_tempo"
-
-# Ads Service Configuration
-[params.ads]
-  enabled = true
-  apiUrl = "https://ads.ttmenus.com/api/v1"
-  clientId = "ttms_tempo"
-
-# Notification Service Configuration
-[params.notifications]
-  enabled = true
-  apiUrl = "https://notify.ttmenus.com/api/v1"
-  websocketUrl = "wss://notify.ttmenus.com/api/v1/ws/connect"
-  serviceUrl = "https://notify.ttmenus.com"
-
-[params.services]
-  analyticsid = 0
-  notifications = true
-
-[params.features]
-  payments = false
-  delivery = false
-  notifications = true
-
-[params.orderingsystem]
-  vat = 0
-  servicecharge = 0
-  hastables = true
-  usephonecall = false
-  whatsapp = 18687498776
-  phone = 18682398364
-  
-# Social profiles
-[params.social]
-  facebook = ""
-  instagram = ""
-  tiktok = ""
-  youtube = ""
-  email = "admin@tempoentertainmenttt.com"
-  phone = 18682398364
-  
 [markup]
   [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
     [markup.goldmark.parser]
       attribute = true
-
-[outputs]
-  home = ["HTML", "JSON"]
-  section = ["HTML", "JSON"]
-  page = ["HTML", "JSON"]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [outputFormats]
   [outputFormats.menuitemsJSON]
@@ -78,16 +27,79 @@ theme = '_menus_ttms'
     isPlainText = true
     notAlternative = true
 
+[outputs]
+  home = ["HTML", "JSON"]
+  section = ["HTML", "JSON"]
+  page = ["HTML", "JSON"]
+
+[params]
+  authServiceUrl = "https://auth.ttmenus.com"
+  adsServiceUrl = "https://ads.ttmenus.com"
+  notifyServiceUrl = "https://notify.ttmenus.com"
+
+[params.auth]
+  enabled = true
+  apiUrl = "https://auth.ttmenus.com/api/v1"
+
+[params.contentManagement]
+  enabled = true
+  apiUrl = "https://cms.ttmenus.com/api"
+  serviceUrl = "https://cms.ttmenus.com"
+  clientId = "ttms_tempo"
+
+# Menu images (approved uploads) — same stack as menudemo / current clients
+[params.menuImageService]
+  enabled = true
+  apiUrl = "https://menu-images.ttmenus.com/api/v1"
+
+[params.ads]
+  clientId = "ttms_tempo"
+  enabled = true
+  apiUrl = "https://ads.ttmenus.com/api/v1"
+
+[params.notifications]
+  enabled = true
+  apiUrl = "https://notify.ttmenus.com/api/v1"
+  websocketUrl = "wss://notify.ttmenus.com/api/v1/ws/connect"
+  serviceUrl = "https://notify.ttmenus.com"
+
+[params.features]
+  payments = false
+  delivery = false
+  notifications = true
+
+[params.orderingsystem]
+  enabled = true
+  orderingDisabledMessage = "Ordering is not available for this menu at this time."
+  vat = 0
+  servicecharge = 0
+  hastables = true
+  usephonecall = false
+  whatsapp = 18687498776
+  phone = 18682398364
+
+[params.services]
+  analyticsid = 0
+  notifications = true
+
+[params.social]
+  youtube = ""
+  email = "admin@tempoentertainmenttt.com"
+  phone = 18682398364
+  facebook = "https://www.facebook.com/share/14QHQYi34V7/"
+  instagram = "https://www.instagram.com/tempoentertainmenttt/"
+  tiktok = "https://www.tiktok.com/@tempo.nightclubandlounge"
+
+[privacy]
+  [privacy.instagram]
+    simple = false
+    disable = false
+
 [taxonomies]
+  ingredient = "ingredients"
+  cookingmethod = "cookingmethods"
   tag = "tags"
   category = "categories"
   subcategory = "subcategories"
   type = "types"
   event = "events"
-  ingredient ="ingredients"
-  cookingmethod ="cookingmethods"
-
-[privacy]
-  [privacy.instagram]
-    disable = false
-    simple = false

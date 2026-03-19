@@ -1,14 +1,14 @@
 ---
-title: Onion Rings
+title: Red Velvet
 prices:
   - variable1: "-"
     variable2: "-"
     price: 0
 tags:
-  - Side
+  - Dessert
 types:
-  - Side
-weight: 4
+  - Dessert
+weight: 1
 ---
 
-Crispy onion rings.
+Red velvet cake.

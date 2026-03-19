@@ -3,7 +3,7 @@
   command = "bash build_menu.sh"
 
 [build.environment]
-  HUGO_VERSION = "0.121.1"
+  HUGO_VERSION = "0.140.2"
   HUGO_ENV = "production"
    GIT_SUBMODULE_STRATEGY = "recursive"
   # Disable SSH prompts

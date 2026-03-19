@@ -1,14 +1,14 @@
 ---
-title: Onion Rings
+title: Strawberry Cake
 prices:
   - variable1: "-"
     variable2: "-"
     price: 0
 tags:
-  - Side
+  - Dessert
 types:
-  - Side
-weight: 4
+  - Dessert
+weight: 3
 ---
 
-Crispy onion rings.
+Strawberry cake.

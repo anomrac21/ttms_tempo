@@ -1,5 +1,7 @@
 ---
 title: Appetizers
-weight: 10
-icon: https://cdn.ttmenus.com/icons/food/icon-wontons.webp
+weight: 2
+icon: https://ct.ttmenus.com/icons/food/icon-wontons.webp
 ---
+
+Starters and shareables. **Open Face Wantons** are dine-in only (not for takeout). Wing sauces: Buffalo Blue, Scotch Bonnet, Honey Garlic, Szechuan, Jerk.

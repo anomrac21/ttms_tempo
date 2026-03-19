@@ -1,32 +1,46 @@
 :root {
-    --hero-bg-image-fg-color: #f4dec3;
-    --contact-info-bg: none;
-    --button-text-color2: #ffffff;
-    --main-bg-color: #f4dec3;
-    --menu-bg-color-1: #22273111;
-    --header-bordercolor-1: #dfeed4ff;
-    --modal-bg-container-color: #00000055;
-    --selected-button-color3: #fff;
-    --header-color: #000000ed;
-    --header-bg-color: #222731ee;
-    --selected-button-color4: #000000ee;
-    --button-color2: #000;
-    --header-bordercolor-2: #dfeed4ff;
-    --selected-text-color2: #fff;
-    --header-icon-color: #fefefe;
-    --menu-bg-color-2: #00000055;
-    --button-color1: #222731;
-    --selected-button-color2: #4f144d;
-    --footer-text-color: #000;
-    --hero-text-color: #ffffff;
-    --header-bg-image: none;
-    --button-text-color3: #fff;
-    --selected-text-color3: #4f144d;
-    --selected-button-color1: #4f144d;
-    --button-text-color1: #fefefe;
-    --main-text-color: #ffffff;
-    --main-bg: #000;
-    --footer-bg-color: #fefefe;
-    --selected-text-color1: #fff;
-    --hero-bg-color: #000000;
+  /* Header (accent pulled from favicon magenta #ff37ff, toned for UI) */
+  --header-color: #c41bc4ed;
+  --header-bg-color: #140f18ee;
+  --header-icon-color: #fef7fa;
+  --header-text-color: #fef7fa;
+  --header-text-shadow-color: #00000085;
+  --header-bordercolor-1: #ff8fab66;
+  --header-bordercolor-2: #ff8fab66;
+  --header-bg-image: none;
+
+  /* Hero — deep plum-black + light text; blush matches logo coral/silver notes */
+  --hero-bg-image-fg-color: #f8d2de;
+  --hero-bg-color: #08050e;
+  --hero-text-color: #ffffff;
+
+  /* Main */
+  --main-bg: #000000;
+  --main-bg-color: #f8d2de;
+  --main-text-color: #ffffff;
+
+  /* Menu cards — purple (logo gradient) + coral wash (logo pink) */
+  --menu-bg-color-1: #5c1874;
+  --menu-bg-color-2: #ff6b8a55;
+  --menu-text-color: #ffffff;
+
+  /* Buttons */
+  --button-color1: #1c1424;
+  --button-color2: #06040a;
+  --button-text-color1: #fef7fa;
+  --button-text-color2: #e8d5df;
+  --button-text-color3: #ffffff;
+  --selected-button-color1: #b018a8;
+  --selected-button-color2: #4d1568;
+  --selected-button-color3: #ff8ec0a8;
+  --selected-button-color4: #2a0f34ee;
+  --selected-text-color1: #ffffff;
+  --selected-text-color2: #ffffff;
+  --selected-text-color3: #ffc8e4;
+
+  /* Optional: contact strip / modals / footer (theme & client editor) */
+  --contact-info-bg: none;
+  --modal-bg-container-color: #00000055;
+  --footer-bg-color: #fdf2f6;
+  --footer-text-color: #1a0a14;
 }

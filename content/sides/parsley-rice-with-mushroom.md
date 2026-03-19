@@ -1,5 +1,5 @@
 ---
-title: Onion Rings
+title: Parsley Rice with Mushroom
 prices:
   - variable1: "-"
     variable2: "-"
@@ -8,7 +8,7 @@ tags:
   - Side
 types:
   - Side
-weight: 4
+weight: 5
 ---
 
-Crispy onion rings.
+Herbed rice with mushrooms.

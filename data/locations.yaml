@@ -2,7 +2,7 @@ locations:
   - address: "526 Southern Main Rd"
     city: "San Fernando"
     island: "Trinidad"
-    latlon: [10.243750,-6149617046185486.000000]
+    latlon: [10.2735, -61.4683]
     phone: "18682398364"
     whatsapp: "18687498776"
     subcategories: []

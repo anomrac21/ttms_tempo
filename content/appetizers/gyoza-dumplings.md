@@ -1,15 +1,17 @@
 ---
 title: Gyoza Dumplings
-weight: 10
-date: 2026-01-14T18:06:22Z
 prices:
-  - size: "-"
+  - variable1: "-"
+    variable2: "Chicken"
     price: 55
-    flavour: "-"
-tags: ["Gyoza Dumplings", "Dumplings"]
-ingredients: ["Dumpling Wrappers"]
-cookingmethods: ["Steamed"]
-types: ["Food", "Appetizer"]
-events: []
+  - variable1: "-"
+    variable2: "Pork"
+    price: 65
+tags:
+  - Appetizer
+types:
+  - Starter
+weight: 9
 ---
 
+Eight pan-seared dumplings filled with savory meat and vegetables, with soy dipping sauce.

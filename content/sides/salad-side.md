@@ -1,5 +1,5 @@
 ---
-title: Onion Rings
+title: Salad
 prices:
   - variable1: "-"
     variable2: "-"
@@ -8,7 +8,7 @@ tags:
   - Side
 types:
   - Side
-weight: 4
+weight: 6
 ---
 
-Crispy onion rings.
+Side salad.

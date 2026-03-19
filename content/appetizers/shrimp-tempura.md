@@ -1,15 +1,15 @@
 ---
 title: Shrimp Tempura
-weight: 10
-date: 2026-01-14T18:06:22Z
 prices:
-  - size: "-"
+  - variable1: "-"
+    variable2: "-"
     price: 85
-    flavour: "-"
-tags: ["Shrimp Tempura", "Shrimp"]
-ingredients: ["Shrimp"]
-cookingmethods: ["Fried"]
-types: ["Food", "Appetizer"]
-events: []
+tags:
+  - Appetizer
+  - Seafood
+types:
+  - Starter
+weight: 5
 ---
 
+Six golden fried shrimp with citrus fusion sauce.

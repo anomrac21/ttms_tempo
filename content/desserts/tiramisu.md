@@ -1,14 +1,14 @@
 ---
-title: Onion Rings
+title: Tiramisu
 prices:
   - variable1: "-"
     variable2: "-"
     price: 0
 tags:
-  - Side
+  - Dessert
 types:
-  - Side
-weight: 4
+  - Dessert
+weight: 2
 ---
 
-Crispy onion rings.
+Classic tiramisu.

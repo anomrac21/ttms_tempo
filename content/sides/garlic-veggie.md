@@ -1,5 +1,5 @@
 ---
-title: Onion Rings
+title: Garlic Veggie
 prices:
   - variable1: "-"
     variable2: "-"
@@ -8,7 +8,7 @@ tags:
   - Side
 types:
   - Side
-weight: 4
+weight: 7
 ---
 
-Crispy onion rings.
+Garlic sautéed vegetables.

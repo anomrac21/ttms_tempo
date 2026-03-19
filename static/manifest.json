@@ -1,8 +1,8 @@
 {
-    "name": "Menu Demo",
-    "short_name": "Menu Demo",
-    "description": "Menu Demo Digital Menu ",
-    "start_url": ".",
+    "name": "Tempo Nightclub",
+    "short_name": "Tempo",
+    "description": "Tempo Nightclub digital menu.",
+    "start_url": "/",
     "background_color": "#000000",
     "display": "standalone",
     "theme_color": "#000000",
