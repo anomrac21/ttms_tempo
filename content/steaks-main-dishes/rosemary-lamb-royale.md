@@ -9,7 +9,7 @@ tags:
   - Lamb
 types:
   - Main
-weight: 7
+weight: 8
 ---
 
 Four lamb chops with rosemary–garlic crust and herbs, finished in pan juices. Served with parsley–mushroom rice and seasonal vegetables.
