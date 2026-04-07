@@ -9,9 +9,7 @@ languageCode = 'en-tt'
   [[module.mounts]]
     source = "themes/_menus_ttms/content"
     target = "content"
-  [[module.mounts]]
-    source = "../_ttms_clienttools/icons"
-    target = "static/icons"
+
 
 title = 'Tempo Nightclub'
 baseURL = 'https://tempo.ttmenus.com/'
@@ -82,7 +80,7 @@ baseURL = 'https://tempo.ttmenus.com/'
   phone = 18682398364
 
 [params.services]
-  analyticsid = 0
+  analyticsid = 20
   notifications = true
 
 [params.social]
