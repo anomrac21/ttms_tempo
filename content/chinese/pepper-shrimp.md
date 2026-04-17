@@ -1,9 +1,9 @@
 ---
-title: Pepper Feast
+title: Pepper Shrimp
 prices:
   - variable1: "-"
     variable2: "-"
-    price: 250
+    price: 135
 side_categories:
   - category_name: pepper
     display_name: "Pepper"
@@ -21,10 +21,11 @@ side_categories:
         type: "Regular"
         price: 0
 tags:
-  - Platter
+  - Chinese
+  - Seafood
 types:
   - Main
 weight: 3
 ---
 
-Pepper lamb, grilled pepper chicken, pepper fish, and pepper fries.
+Shrimp with hot pepper, garlic, ginger, sweet peppers, and onions in a rich sauce.

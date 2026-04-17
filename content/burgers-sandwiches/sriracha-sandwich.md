@@ -1,5 +1,5 @@
 ---
-title: Crispy Fried Sandwich
+title: Sriracha Sandwich
 prices:
   - variable1: "Chicken"
     variable2: "-"
@@ -25,9 +25,10 @@ side_categories:
         price: 0
 tags:
   - Sandwich
+  - Chicken
 types:
   - Main
-weight: 4
+weight: 5
 ---
 
-Golden fried chicken breast **or** fish on a soft toasted loaf with garlic sauce, lettuce, Mexican cheese, tomatoes, purple onion, and pickled cucumber.
+Pan-seared chicken breast in Sriracha glaze on a soft toasted loaf with lettuce, Mexican cheese, tomatoes, purple onion, and pickled cucumber.

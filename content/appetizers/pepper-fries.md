@@ -1,9 +1,9 @@
 ---
-title: Pepper Feast
+title: Pepper Fries
 prices:
   - variable1: "-"
     variable2: "-"
-    price: 250
+    price: 40
 side_categories:
   - category_name: pepper
     display_name: "Pepper"
@@ -21,10 +21,11 @@ side_categories:
         type: "Regular"
         price: 0
 tags:
-  - Platter
+  - Appetizer
+  - Potato
 types:
-  - Main
-weight: 3
+  - Starter
+weight: 5
 ---
 
-Pepper lamb, grilled pepper chicken, pepper fish, and pepper fries.
+

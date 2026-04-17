@@ -1,8 +1,20 @@
 ---
 title: Wings
 prices:
-  - variable1: "10 pcs"
-    variable2: "-"
+  - variable1: "Buffalo Blue"
+    variable2: "10 pcs"
+    price: 110
+  - variable1: "Scotch Bonnet"
+    variable2: "10 pcs"
+    price: 110
+  - variable1: "Honey Garlic"
+    variable2: "10 pcs"
+    price: 110
+  - variable1: "Szechuan"
+    variable2: "10 pcs"
+    price: 110
+  - variable1: "Jerk"
+    variable2: "10 pcs"
     price: 110
 tags:
   - Appetizer

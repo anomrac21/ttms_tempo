@@ -3,7 +3,7 @@ title: Mashed Potato
 prices:
   - variable1: "-"
     variable2: "-"
-    price: 0
+    price: 35
 tags:
   - Side
 types:

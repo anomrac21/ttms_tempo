@@ -3,7 +3,7 @@ title: Roasted Pork
 prices:
   - variable1: "-"
     variable2: "-"
-    price: 0
+    price: 90
 tags:
   - Chinese
 types:

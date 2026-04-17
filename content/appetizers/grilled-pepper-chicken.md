@@ -1,9 +1,15 @@
 ---
-title: Pepper Feast
+title: Grilled Pepper Chicken
 prices:
   - variable1: "-"
     variable2: "-"
-    price: 250
+    price: 85
+tags:
+  - Chinese
+  - Chicken
+types:
+  - Main
+weight: 2
 side_categories:
   - category_name: pepper
     display_name: "Pepper"
@@ -20,11 +26,6 @@ side_categories:
       - name: "Hot"
         type: "Regular"
         price: 0
-tags:
-  - Platter
-types:
-  - Main
-weight: 3
 ---
 
-Pepper lamb, grilled pepper chicken, pepper fish, and pepper fries.
+Smoky grilled chicken with a peppery kick, tossed with mushrooms, hot pepper, and onions.

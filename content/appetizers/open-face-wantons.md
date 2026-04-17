@@ -2,8 +2,14 @@
 title: Open Face Wantons
 prices:
   - variable1: "Dine-in only"
-    variable2: "-"
-    price: 0
+    variable2: "Chicken"
+    price: 65
+  - variable1: "Dine-in only"
+    variable2: "Shrimp"
+    price: 65
+  - variable1: "Dine-in only"
+    variable2: "Veggie"
+    price: 55
 tags:
   - Appetizer
 types:

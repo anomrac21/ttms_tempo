@@ -1,8 +1,17 @@
 ---
 title: Chimichurri Ribeye Steak
 prices:
-  - variable1: "12 oz"
-    variable2: "-"
+  - variable1: "Medium rare"
+    variable2: "10 oz"
+    price: 300
+  - variable1: "Medium"
+    variable2: "10 oz"
+    price: 300
+  - variable1: "Medium well"
+    variable2: "10 oz"
+    price: 300
+  - variable1: "Well done"
+    variable2: "10 oz"
     price: 300
 tags:
   - Main
@@ -20,7 +29,7 @@ side_categories:
       - name: "French Fries"
         type: "Regular"
         price: 0
-      - name: "Cassava Fries"
+      - name: "House Salad"
         type: "Regular"
         price: 0
       - name: "Mashed Potato"
@@ -29,18 +38,9 @@ side_categories:
       - name: "Onion Rings"
         type: "Regular"
         price: 0
-      - name: "Parsley Rice with Mushroom"
-        type: "Regular"
-        price: 0
-      - name: "Salad"
-        type: "Regular"
-        price: 0
-      - name: "Garlic Veggie"
-        type: "Regular"
-        price: 0
-      - name: "Coleslaw"
+      - name: "Parsley Rice"
         type: "Regular"
         price: 0
 ---
 
-12 oz ribeye grilled and topped with chimichurri (herbs, garlic, olive oil). **Two** sides of your choice — pick from the list.
+10 oz ribeye grilled and topped with chimichurri (herbs, garlic, olive oil). **Two** sides of your choice — pick from the list.

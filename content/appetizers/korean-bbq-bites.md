@@ -1,7 +1,10 @@
 ---
 title: Korean BBQ Bites
 prices:
-  - variable1: "-"
+  - variable1: "Crispy chicken"
+    variable2: "-"
+    price: 90
+  - variable1: "Fish"
     variable2: "-"
     price: 90
 tags:

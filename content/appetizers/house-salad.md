@@ -1,15 +1,9 @@
 ---
-title: Signature House Salad
+title: House Salad
 prices:
   - variable1: "-"
-    variable2: "Veggie"
-    price: 100
-  - variable1: "-"
-    variable2: "Shrimp"
-    price: 140
-  - variable1: "-"
-    variable2: "Chicken"
-    price: 135
+    variable2: "-"
+    price: 65
 tags:
   - Salad
 types:

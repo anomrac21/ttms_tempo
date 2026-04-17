@@ -1,7 +1,13 @@
 ---
 title: Quesadillas
 prices:
-  - variable1: "-"
+  - variable1: "Chicken"
+    variable2: "-"
+    price: 90
+  - variable1: "Veggie"
+    variable2: "-"
+    price: 80
+  - variable1: "Beef"
     variable2: "-"
     price: 90
 tags:

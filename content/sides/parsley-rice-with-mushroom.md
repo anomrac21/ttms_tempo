@@ -1,9 +1,9 @@
 ---
-title: Parsley Rice with Mushroom
+title: Parsley Rice
 prices:
   - variable1: "-"
     variable2: "-"
-    price: 0
+    price: 45
 tags:
   - Side
 types:
@@ -11,4 +11,4 @@ types:
 weight: 5
 ---
 
-Herbed rice with mushrooms.
+Herbed rice

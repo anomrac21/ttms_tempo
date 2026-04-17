@@ -20,7 +20,7 @@ side_categories:
       - name: "French Fries"
         type: "Regular"
         price: 0
-      - name: "Cassava Fries"
+      - name: "House Salad"
         type: "Regular"
         price: 0
       - name: "Mashed Potato"
@@ -29,13 +29,7 @@ side_categories:
       - name: "Onion Rings"
         type: "Regular"
         price: 0
-      - name: "Parsley Rice with Mushroom"
-        type: "Regular"
-        price: 0
-      - name: "Salad"
-        type: "Regular"
-        price: 0
-      - name: "Garlic Veggie"
+      - name: "Parsley Rice"
         type: "Regular"
         price: 0
 ---

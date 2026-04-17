@@ -1,12 +1,12 @@
 ---
-title: Aglio e Olio
+title: Aglio
 prices:
   - variable1: "-"
     variable2: "Chicken"
     price: 135
   - variable1: "-"
     variable2: "Shrimp"
-    price: 140
+    price: 145
   - variable1: "-"
     variable2: "Veggie"
     price: 100
