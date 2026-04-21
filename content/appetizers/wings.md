@@ -10,6 +10,9 @@ prices:
   - variable1: "Honey Garlic"
     variable2: "10 pcs"
     price: 110
+  - variable1: "Honey Mustard"
+    variable2: "10 pcs"
+    price: 110
   - variable1: "Szechuan"
     variable2: "10 pcs"
     price: 110
@@ -24,4 +27,4 @@ types:
 weight: 2
 ---
 
-10 wings seasoned, deep fried, and sautéed with your choice of signature flavor: Buffalo Blue, Scotch Bonnet, Honey Garlic, Szechuan, or Jerk.
+10 wings seasoned, deep fried, and sautéed with your choice of signature flavor: Buffalo Blue, Scotch Bonnet, Honey Garlic, Honey Mustard, Szechuan, or Jerk.

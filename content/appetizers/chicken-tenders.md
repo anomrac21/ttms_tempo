@@ -1,5 +1,5 @@
 ---
-title: Chicken Teenders
+title: Chicken Tenders
 prices:
   - variable1: "-"
     variable2: "-"
