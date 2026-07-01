@@ -1,0 +1,39 @@
+name: Deploy to Kubernetes
+
+on:
+  push:
+    branches: [master, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  trigger-hugo-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require deploy token
+        env:
+          HUGO_DEPLOY_TOKEN: ${{ secrets.HUGO_DEPLOY_TOKEN }}
+          CLUSTER_REPO_TOKEN: ${{ secrets.CLUSTER_REPO_TOKEN }}
+        run: |
+          if [ -z "$HUGO_DEPLOY_TOKEN" ] && [ -z "$CLUSTER_REPO_TOKEN" ]; then
+            echo "::error::Missing HUGO_DEPLOY_TOKEN (or legacy CLUSTER_REPO_TOKEN)."
+            echo "CPS should set this before the first push. To fix an existing site, run the"
+            echo "hugo-deploy-token-inject workflow in ttms-app-cluster or set the secret manually."
+            exit 1
+          fi
+
+      - name: Trigger cluster Hugo rebuild
+        uses: peter-evans/repository-dispatch@v4
+        with:
+          token: ${{ secrets.HUGO_DEPLOY_TOKEN || secrets.CLUSTER_REPO_TOKEN }}
+          repository: anomrac21/ttms-client-configs
+          event-type: hugo-redeploy
+          client-payload: |-
+            {
+              "cluster_client_id": "ttms-tempo",
+              "environment": "production",
+              "source_repo": "${{ github.repository }}",
+              "source_sha": "${{ github.sha }}"
+            }

@@ -1,7 +1,9 @@
 ---
-title: "Liqueur"
-weight: 20
-icon: https://ct.ttmenus.com/icons/food/icon-glass.webp
+title: Liqueur
+weight: 21
+icon: images/liqueur.webp
+images:
+    primary: images/liqueur.webp
 ---
 
 Liqueurs and cordials. Confirm prices with staff.

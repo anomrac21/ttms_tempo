@@ -1,7 +1,9 @@
 ---
 title: Steaks & Main Dishes
-weight: 3
-icon: https://ct.ttmenus.com/icons/food/icon-beef.webp
+weight: 4
+icon: images/steaks-main-dishes.webp
+images:
+    primary: images/steaks-main-dishes.webp
 ---
 
 Hearty mains and grill favorites. Confirm shellfish and fish market items with your server if a price is not shown.

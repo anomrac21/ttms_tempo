@@ -1,7 +1,9 @@
 ---
 title: Platters
-weight: 7
-icon: https://ct.ttmenus.com/icons/food/icon-platter.webp
+weight: 8
+icon: images/platters.webp
+images:
+    primary: images/platters.webp
 ---
 
 Share platters. Ask staff for platter pricing.

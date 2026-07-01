@@ -1,7 +1,9 @@
 ---
-title: "Shots"
-weight: 24
-icon: https://ct.ttmenus.com/icons/food/icon-shots.webp
+title: Shots
+weight: 25
+icon: images/shots.webp
+images:
+    primary: images/shots.webp
 ---
 
 Shots and shooters. Confirm prices with staff.

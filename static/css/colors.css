@@ -39,8 +39,8 @@
   --selected-text-color3: #ffc8e4;
 
   /* Optional: contact strip / modals / footer (theme & client editor) */
-  --contact-info-bg: none;
+  --contact-info-bg: #4d1568;
   --modal-bg-container-color: #00000055;
-  --footer-bg-color: #fdf2f6;
-  --footer-text-color: #1a0a14;
+  --footer-bg-color: #2a0f34;
+  --footer-text-color: #fef7fa;
 }

@@ -1,7 +1,9 @@
 ---
 title: Lunch Menu
-weight: 5
-icon: https://ct.ttmenus.com/icons/white/icon-lunchspecial.webp
+weight: 2
+icon: images/lunch-menu.webp
+images:
+    primary: images/lunch-menu.webp
 ---
 
 Lunch available **Monday to Friday**, **11AM – 2PM**.

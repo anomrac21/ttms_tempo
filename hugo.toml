@@ -62,7 +62,8 @@ baseURL = 'https://tempo.ttmenus.com/'
   enabled = true
   apiUrl = "https://notify.ttmenus.com/api/v1"
   websocketUrl = "wss://notify.ttmenus.com/api/v1/ws/connect"
-  serviceUrl = "https://notify.ttmenus.com"
+    serviceUrl = "https://notify.ttmenus.com"
+  clientDomain = "tempo.ttmenus.com"
 
 [params.features]
   payments = false

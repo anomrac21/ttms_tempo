@@ -1,7 +1,9 @@
 ---
-title: "Gin"
+title: Gin
 weight: 16
-icon: https://ct.ttmenus.com/icons/food/icon-drinks.webp
+icon: images/gin.webp
+images:
+    primary: images/gin.webp
 ---
 
 Gin by the bottle or glass. Confirm prices with staff.

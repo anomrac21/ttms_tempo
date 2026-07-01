@@ -1,7 +1,9 @@
 ---
-title: "Cocktails"
-weight: 22
-icon: https://ct.ttmenus.com/icons/food/icon-drinks.webp
+title: Cocktails
+weight: 23
+icon: images/cocktails.webp
+images:
+    primary: images/cocktails.webp
 ---
 
 Mixed drinks and mocktails. Confirm prices with staff.

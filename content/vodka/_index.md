@@ -1,7 +1,9 @@
 ---
-title: "Vodka"
-weight: 15
-icon: https://ct.ttmenus.com/icons/food/icon-drinks.webp
+title: Vodka
+weight: 17
+icon: images/vodka.webp
+images:
+    primary: images/vodka.webp
 ---
 
 Vodka bottles, halves, and drinks. Confirm prices with staff.

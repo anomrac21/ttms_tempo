@@ -1,7 +1,9 @@
 ---
-title: "Champagne"
-weight: 19
-icon: https://ct.ttmenus.com/icons/food/icon-champagne.webp
+title: Champagne
+weight: 20
+icon: images/champagne.webp
+images:
+    primary: images/champagne.webp
 ---
 
 Champagne and sparkling. Confirm prices with staff.

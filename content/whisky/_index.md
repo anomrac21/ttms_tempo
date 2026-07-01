@@ -1,7 +1,9 @@
 ---
-title: "Whisky & Scotch"
-weight: 13
-icon: https://ct.ttmenus.com/icons/food/icon-whiskey.webp
+title: Whisky & Scotch
+weight: 14
+icon: images/whisky.webp
+images:
+    primary: images/whisky.webp
 ---
 
 Scotch, Irish, bourbon, and blended whisky. Confirm prices with staff.

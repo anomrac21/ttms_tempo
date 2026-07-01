@@ -1,7 +1,9 @@
 ---
 title: Desserts
-weight: 9
-icon: https://ct.ttmenus.com/icons/food/icon-desserts.webp
+weight: 10
+icon: images/desserts.webp
+images:
+    primary: images/desserts.webp
 ---
 
 Sweet finishes. Ask server for today’s selection and pricing.
