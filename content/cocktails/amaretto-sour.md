@@ -1,13 +1,14 @@
 ---
-title: "Amaretto Sour"
+date: "2026-07-05T01:22:51.871Z"
 prices:
-  - variable1: "-"
-    variable2: "-"
-    price: 50
+    - price: 65
+      variable1: '-'
+      variable2: '-'
 tags:
-  - Drink
+    - Drink
+title: Amaretto Sour
 types:
-  - Drink
-weight: 39
+    - Drink
+weight: 2
 ---
 
