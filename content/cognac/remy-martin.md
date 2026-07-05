@@ -3,7 +3,7 @@ title: "Remy Martin"
 prices:
   - variable1: "Bottle"
     variable2: "-"
-    price: 550
+    price: 700
 tags:
   - Drink
 types:

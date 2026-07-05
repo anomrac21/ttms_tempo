@@ -3,7 +3,7 @@ title: Mac and Cheese Croquettes
 prices:
   - variable1: "-"
     variable2: "-"
-    price: 80
+    price: 99
 tags:
   - Pasta
 types:

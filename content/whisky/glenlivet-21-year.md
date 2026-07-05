@@ -6,7 +6,7 @@ prices:
     price: 3000
   - variable1: "Drink"
     variable2: "-"
-    price: 1100
+    price: 187
 tags:
   - Drink
 types:

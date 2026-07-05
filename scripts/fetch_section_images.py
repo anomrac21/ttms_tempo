@@ -44,6 +44,7 @@ PEXELS: dict[str, tuple[str, str]] = {
     "slideshow-cocktails.webp": (PEX.format(id="274192"), "Pexels #274192"),
     "slideshow-food.webp": (PEX.format(id="618785"), "Pexels #618785"),
     "slideshow-nightlife.webp": (PEX.format(id="1267325"), "Pexels #1267325"),
+    "hookah.webp": (PEX.format(id="18843833"), "Pexels #18843833"),
 }
 
 SECTIONS: dict[str, str] = {
@@ -72,6 +73,7 @@ SECTIONS: dict[str, str] = {
     "cocktails": "cocktails.webp",
     "cocktail-specials": "cocktail-specials.webp",
     "shots": "shots.webp",
+    "hookah": "hookah.webp",
 }
 
 WEIGHTS: dict[str, str] = {
@@ -100,6 +102,7 @@ WEIGHTS: dict[str, str] = {
     "cocktails": "23",
     "cocktail-specials": "24",
     "shots": "25",
+    "hookah": "26",
 }
 
 

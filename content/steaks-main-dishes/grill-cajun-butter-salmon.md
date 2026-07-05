@@ -3,7 +3,7 @@ title: Grill Cajun Butter Salmon
 prices:
   - variable1: "-"
     variable2: "-"
-    price: 150
+    price: 190
 tags:
   - Main
   - Seafood

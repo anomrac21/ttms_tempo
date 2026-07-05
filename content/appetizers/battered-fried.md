@@ -3,7 +3,7 @@ title: Battered Fried
 prices:
   - variable1: "Chicken"
     variable2: "-"
-    price: 90
+    price: 85
   - variable1: "Shrimp"
     variable2: "-"
     price: 130

@@ -3,19 +3,19 @@ title: Classic Share
 prices:
   - variable1: "Buffalo Blue"
     variable2: "-"
-    price: 235
+    price: 185
   - variable1: "Scotch Bonnet"
     variable2: "-"
-    price: 235
+    price: 185
   - variable1: "Honey Garlic"
     variable2: "-"
-    price: 235
+    price: 185
   - variable1: "Szechuan"
     variable2: "-"
-    price: 235
+    price: 185
   - variable1: "Jerk"
     variable2: "-"
-    price: 235
+    price: 185
 tags:
   - Platter
 types:

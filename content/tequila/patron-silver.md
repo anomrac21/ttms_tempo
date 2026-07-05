@@ -4,6 +4,9 @@ prices:
   - variable1: "Bottle"
     variable2: "-"
     price: 900
+  - variable1: "Half"
+    variable2: "-"
+    price: 550
   - variable1: "Shot"
     variable2: "-"
     price: 70

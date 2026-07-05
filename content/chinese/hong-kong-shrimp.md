@@ -3,7 +3,7 @@ title: Hong Kong Shrimp
 prices:
   - variable1: "-"
     variable2: "-"
-    price: 135
+    price: 95
 side_categories:
   - category_name: pepper
     display_name: "Pepper"

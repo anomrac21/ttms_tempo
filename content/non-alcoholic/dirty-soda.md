@@ -1,13 +1,12 @@
 ---
-title: "Heineken Special 5 for $100"
+title: "Dirty Soda"
 prices:
   - variable1: "-"
     variable2: "-"
-    price: 100
+    price: 35
 tags:
   - Drink
 types:
   - Drink
-weight: 37
+weight: 17
 ---
-

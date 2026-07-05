@@ -3,7 +3,7 @@ title: Pepper Fries
 prices:
   - variable1: "-"
     variable2: "-"
-    price: 40
+    price: 45
 side_categories:
   - category_name: pepper
     display_name: "Pepper"
