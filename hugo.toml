@@ -53,6 +53,13 @@ baseURL = 'https://tempo.ttmenus.com/'
   enabled = true
   apiUrl = "https://menu-images.ttmenus.com/api/v1"
 
+# Thumbor — dashboard previews + menu images
+[params.thumbor]
+  enabled = true
+  url = "https://thumbor.ttmenus.com"
+  sourceBaseUrl = "https://tempo.ttmenus.com"
+  menuImagesUseThumbor = false
+
 [params.ads]
   clientId = "ttms_tempo"
   enabled = true
@@ -62,8 +69,13 @@ baseURL = 'https://tempo.ttmenus.com/'
   enabled = true
   apiUrl = "https://notify.ttmenus.com/api/v1"
   websocketUrl = "wss://notify.ttmenus.com/api/v1/ws/connect"
-    serviceUrl = "https://notify.ttmenus.com"
+  serviceUrl = "https://notify.ttmenus.com"
   clientDomain = "tempo.ttmenus.com"
+
+# Override theme demo defaults — payments not enabled for Tempo
+[params.paymentService]
+  enabled = false
+  clientId = "ttms_tempo"
 
 [params.features]
   payments = false
