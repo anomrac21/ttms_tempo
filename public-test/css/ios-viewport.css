@@ -1,0 +1,74 @@
+/**
+ * iOS-safe viewport sizing for fullscreen overlays, dashboards, and modals.
+ * --ttms-vvh is synced from visualViewport in ios-viewport.js.
+ */
+
+:root {
+    --ttms-safe-top: env(safe-area-inset-top, 0px);
+    --ttms-safe-bottom: env(safe-area-inset-bottom, 0px);
+    --ttms-header-bar: 5em;
+    --ttms-header-height: calc(var(--ttms-header-bar) + var(--ttms-safe-top));
+    --ttms-overlay-height: var(--ttms-vvh, 100dvh);
+}
+
+html,
+body {
+    background-color: var(--main-bg, #000);
+    min-height: 100%;
+    min-height: 100dvh;
+    min-height: -webkit-fill-available;
+}
+
+header {
+    padding-top: var(--ttms-safe-top);
+    box-sizing: border-box;
+}
+
+#footer {
+    padding-bottom: max(0.85rem, var(--ttms-safe-bottom));
+    padding-left: max(0.65rem, env(safe-area-inset-left, 0px));
+    padding-right: max(0.65rem, env(safe-area-inset-right, 0px));
+    box-sizing: border-box;
+}
+
+/* Scroll lock — top offset applied by ios-viewport.js */
+html.ttms-scroll-locked,
+body.ttms-scroll-locked {
+    overflow: hidden !important;
+    overscroll-behavior: none;
+}
+
+body.ttms-scroll-locked {
+    position: fixed !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+}
+
+/* Fallback when JS has not yet toggled ttms-scroll-locked */
+body.cart-open,
+body.modal-open,
+body.table-modal-open,
+body.menu-reels-item-modal-open,
+body.ads-reels-open,
+body.account-dashboard-open {
+    overflow: hidden;
+    overscroll-behavior: none;
+}
+
+body.cart-open #footerBtns,
+body.cart-open #footerSettings,
+body.modal-open #footerBtns,
+body.modal-open #footerSettings,
+body.table-modal-open #footerBtns,
+body.table-modal-open #footerSettings,
+body.menu-reels-item-modal-open #footerBtns,
+body.menu-reels-item-modal-open #footerSettings,
+body.ads-reels-open #footerBtns,
+body.ads-reels-open #footerSettings,
+body.account-dashboard-open #footerBtns,
+body.account-dashboard-open #footerSettings {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}

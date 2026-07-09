@@ -1,0 +1,1747 @@
+{
+  "success": true,
+  "count": 247,
+  "icons": [
+    {
+      "url": "https://cdn.ttmenus.com/icons/activities/icon-joystick.svg",
+      "category": "activities",
+      "name": "Joystick",
+      "filename": "icon-joystick.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/business/advertising.svg",
+      "category": "business",
+      "name": "Advertising",
+      "filename": "advertising.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/business/client.svg",
+      "category": "business",
+      "name": "Client",
+      "filename": "client.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/business/description.svg",
+      "category": "business",
+      "name": "Description",
+      "filename": "description.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/business/install.svg",
+      "category": "business",
+      "name": "Install",
+      "filename": "install.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/business/mission.svg",
+      "category": "business",
+      "name": "Mission",
+      "filename": "mission.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/business/personal.svg",
+      "category": "business",
+      "name": "Personal",
+      "filename": "personal.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/business/policy.svg",
+      "category": "business",
+      "name": "Policy",
+      "filename": "policy.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/business/resources.svg",
+      "category": "business",
+      "name": "Resources",
+      "filename": "resources.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/appetizer-beach-cocktail-2-svgrepo-com.svg",
+      "category": "drink",
+      "name": "Appetizer Beach Cocktail 2 Svgrepo Com",
+      "filename": "appetizer-beach-cocktail-2-svgrepo-com.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/appetizer-beach-cocktail-svgrepo-com.svg",
+      "category": "drink",
+      "name": "Appetizer Beach Cocktail Svgrepo Com",
+      "filename": "appetizer-beach-cocktail-svgrepo-com.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-beer.svg",
+      "category": "drink",
+      "name": "Beer",
+      "filename": "icon-beer.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-beer.webp",
+      "category": "drink",
+      "name": "Beer",
+      "filename": "icon-beer.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-beerglass.webp",
+      "category": "drink",
+      "name": "Beerglass",
+      "filename": "icon-beerglass.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-champagne.webp",
+      "category": "drink",
+      "name": "Champagne",
+      "filename": "icon-champagne.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-coffee.webp",
+      "category": "drink",
+      "name": "Coffee",
+      "filename": "icon-coffee.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-coffee2.webp",
+      "category": "drink",
+      "name": "Coffee2",
+      "filename": "icon-coffee2.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-drinks-w.webp",
+      "category": "drink",
+      "name": "Drinks W",
+      "filename": "icon-drinks-w.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-drinks.webp",
+      "category": "drink",
+      "name": "Drinks",
+      "filename": "icon-drinks.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-fruitglass.webp",
+      "category": "drink",
+      "name": "Fruitglass",
+      "filename": "icon-fruitglass.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-glass.webp",
+      "category": "drink",
+      "name": "Glass",
+      "filename": "icon-glass.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-icedtea.webp",
+      "category": "drink",
+      "name": "Icedtea",
+      "filename": "icon-icedtea.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-milkshake.webp",
+      "category": "drink",
+      "name": "Milkshake",
+      "filename": "icon-milkshake.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-rum.webp",
+      "category": "drink",
+      "name": "Rum",
+      "filename": "icon-rum.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-scotch.webp",
+      "category": "drink",
+      "name": "Scotch",
+      "filename": "icon-scotch.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-shots.webp",
+      "category": "drink",
+      "name": "Shots",
+      "filename": "icon-shots.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-sigcocktails.webp",
+      "category": "drink",
+      "name": "Sigcocktails",
+      "filename": "icon-sigcocktails.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-slushie.webp",
+      "category": "drink",
+      "name": "Slushie",
+      "filename": "icon-slushie.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-smoothie.webp",
+      "category": "drink",
+      "name": "Smoothie",
+      "filename": "icon-smoothie.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-tea.webp",
+      "category": "drink",
+      "name": "Tea",
+      "filename": "icon-tea.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-whiskey.webp",
+      "category": "drink",
+      "name": "Whiskey",
+      "filename": "icon-whiskey.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/drink/icon-wine.webp",
+      "category": "drink",
+      "name": "Wine",
+      "filename": "icon-wine.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/chicken-leg-svgrepo-com.svg",
+      "category": "food",
+      "name": "Chicken Leg Svgrepo Com",
+      "filename": "chicken-leg-svgrepo-com.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/chicken-thighs-meat-svgrepo-com.svg",
+      "category": "food",
+      "name": "Chicken Thighs Meat Svgrepo Com",
+      "filename": "chicken-thighs-meat-svgrepo-com.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/dine-svgrepo-com.svg",
+      "category": "food",
+      "name": "Dine Svgrepo Com",
+      "filename": "dine-svgrepo-com.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/dinner-svgrepo-com.svg",
+      "category": "food",
+      "name": "Dinner Svgrepo Com",
+      "filename": "dinner-svgrepo-com.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/hamburger.svg",
+      "category": "food",
+      "name": "Hamburger",
+      "filename": "hamburger.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-beef-0.webp",
+      "category": "food",
+      "name": "Beef 0",
+      "filename": "icon-beef-0.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-beef.webp",
+      "category": "food",
+      "name": "Beef",
+      "filename": "icon-beef.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-bento.webp",
+      "category": "food",
+      "name": "Bento",
+      "filename": "icon-bento.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-bread.webp",
+      "category": "food",
+      "name": "Bread",
+      "filename": "icon-bread.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-breakfast.webp",
+      "category": "food",
+      "name": "Breakfast",
+      "filename": "icon-breakfast.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-burger.webp",
+      "category": "food",
+      "name": "Burger",
+      "filename": "icon-burger.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-cabin.webp",
+      "category": "food",
+      "name": "Cabin",
+      "filename": "icon-cabin.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-can-w.webp",
+      "category": "food",
+      "name": "Can W",
+      "filename": "icon-can-w.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-can.webp",
+      "category": "food",
+      "name": "Can",
+      "filename": "icon-can.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-chicken-0.webp",
+      "category": "food",
+      "name": "Chicken 0",
+      "filename": "icon-chicken-0.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-chicken.webp",
+      "category": "food",
+      "name": "Chicken",
+      "filename": "icon-chicken.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-chocolate.webp",
+      "category": "food",
+      "name": "Chocolate",
+      "filename": "icon-chocolate.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-cigar.webp",
+      "category": "food",
+      "name": "Cigar",
+      "filename": "icon-cigar.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-coffee.webp",
+      "category": "food",
+      "name": "Coffee",
+      "filename": "icon-coffee.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-combo.webp",
+      "category": "food",
+      "name": "Combo",
+      "filename": "icon-combo.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-corn.webp",
+      "category": "food",
+      "name": "Corn",
+      "filename": "icon-corn.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-croissant.webp",
+      "category": "food",
+      "name": "Croissant",
+      "filename": "icon-croissant.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-dessert.webp",
+      "category": "food",
+      "name": "Dessert",
+      "filename": "icon-dessert.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-desserts.webp",
+      "category": "food",
+      "name": "Desserts",
+      "filename": "icon-desserts.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-duck.webp",
+      "category": "food",
+      "name": "Duck",
+      "filename": "icon-duck.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-dumplings.webp",
+      "category": "food",
+      "name": "Dumplings",
+      "filename": "icon-dumplings.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-eggs.webp",
+      "category": "food",
+      "name": "Eggs",
+      "filename": "icon-eggs.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-entrancefee.webp",
+      "category": "food",
+      "name": "Entrancefee",
+      "filename": "icon-entrancefee.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-favfood.webp",
+      "category": "food",
+      "name": "Favfood",
+      "filename": "icon-favfood.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-fire.webp",
+      "category": "food",
+      "name": "Fire",
+      "filename": "icon-fire.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-fish.webp",
+      "category": "food",
+      "name": "Fish",
+      "filename": "icon-fish.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-fruit.webp",
+      "category": "food",
+      "name": "Fruit",
+      "filename": "icon-fruit.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-goat-0.webp",
+      "category": "food",
+      "name": "Goat 0",
+      "filename": "icon-goat-0.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-happyhour.webp",
+      "category": "food",
+      "name": "Happyhour",
+      "filename": "icon-happyhour.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-hookah.webp",
+      "category": "food",
+      "name": "Hookah",
+      "filename": "icon-hookah.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-hotdog.webp",
+      "category": "food",
+      "name": "Hotdog",
+      "filename": "icon-hotdog.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-icedtea.webp",
+      "category": "food",
+      "name": "Icedtea",
+      "filename": "icon-icedtea.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-lamb.webp",
+      "category": "food",
+      "name": "Lamb",
+      "filename": "icon-lamb.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-list.webp",
+      "category": "food",
+      "name": "List",
+      "filename": "icon-list.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-lunchspecial.webp",
+      "category": "food",
+      "name": "Lunchspecial",
+      "filename": "icon-lunchspecial.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-milkshake.webp",
+      "category": "food",
+      "name": "Milkshake",
+      "filename": "icon-milkshake.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-molca.webp",
+      "category": "food",
+      "name": "Molca",
+      "filename": "icon-molca.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-nachos.webp",
+      "category": "food",
+      "name": "Nachos",
+      "filename": "icon-nachos.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-noodles.webp",
+      "category": "food",
+      "name": "Noodles",
+      "filename": "icon-noodles.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-pancakes.webp",
+      "category": "food",
+      "name": "Pancakes",
+      "filename": "icon-pancakes.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-pasta.webp",
+      "category": "food",
+      "name": "Pasta",
+      "filename": "icon-pasta.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-pizza.webp",
+      "category": "food",
+      "name": "Pizza",
+      "filename": "icon-pizza.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-platter.webp",
+      "category": "food",
+      "name": "Platter",
+      "filename": "icon-platter.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-pork-0.webp",
+      "category": "food",
+      "name": "Pork 0",
+      "filename": "icon-pork-0.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-quesadillas.webp",
+      "category": "food",
+      "name": "Quesadillas",
+      "filename": "icon-quesadillas.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-ramen.webp",
+      "category": "food",
+      "name": "Ramen",
+      "filename": "icon-ramen.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-rbl.webp",
+      "category": "food",
+      "name": "Rbl",
+      "filename": "icon-rbl.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-ribs.webp",
+      "category": "food",
+      "name": "Ribs",
+      "filename": "icon-ribs.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-rice.webp",
+      "category": "food",
+      "name": "Rice",
+      "filename": "icon-rice.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-rolls.webp",
+      "category": "food",
+      "name": "Rolls",
+      "filename": "icon-rolls.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-rootcrop.webp",
+      "category": "food",
+      "name": "Rootcrop",
+      "filename": "icon-rootcrop.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-rp.webp",
+      "category": "food",
+      "name": "Rp",
+      "filename": "icon-rp.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-rum.webp",
+      "category": "food",
+      "name": "Rum",
+      "filename": "icon-rum.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-salads-w.webp",
+      "category": "food",
+      "name": "Salads W",
+      "filename": "icon-salads-w.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-salads.webp",
+      "category": "food",
+      "name": "Salads",
+      "filename": "icon-salads.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-samosas.webp",
+      "category": "food",
+      "name": "Samosas",
+      "filename": "icon-samosas.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-sandwich-w.webp",
+      "category": "food",
+      "name": "Sandwich W",
+      "filename": "icon-sandwich-w.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-sandwich.webp",
+      "category": "food",
+      "name": "Sandwich",
+      "filename": "icon-sandwich.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-sandwich2.webp",
+      "category": "food",
+      "name": "Sandwich2",
+      "filename": "icon-sandwich2.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-sashimi.webp",
+      "category": "food",
+      "name": "Sashimi",
+      "filename": "icon-sashimi.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-sauce.webp",
+      "category": "food",
+      "name": "Sauce",
+      "filename": "icon-sauce.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-shed.webp",
+      "category": "food",
+      "name": "Shed",
+      "filename": "icon-shed.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-shrimp.webp",
+      "category": "food",
+      "name": "Shrimp",
+      "filename": "icon-shrimp.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-sides.webp",
+      "category": "food",
+      "name": "Sides",
+      "filename": "icon-sides.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-sigcocktails.webp",
+      "category": "food",
+      "name": "Sigcocktails",
+      "filename": "icon-sigcocktails.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-slushie.webp",
+      "category": "food",
+      "name": "Slushie",
+      "filename": "icon-slushie.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-softserve.webp",
+      "category": "food",
+      "name": "Softserve",
+      "filename": "icon-softserve.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-soup.webp",
+      "category": "food",
+      "name": "Soup",
+      "filename": "icon-soup.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-sushi.webp",
+      "category": "food",
+      "name": "Sushi",
+      "filename": "icon-sushi.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-taco.webp",
+      "category": "food",
+      "name": "Taco",
+      "filename": "icon-taco.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-tea.webp",
+      "category": "food",
+      "name": "Tea",
+      "filename": "icon-tea.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-tenders.webp",
+      "category": "food",
+      "name": "Tenders",
+      "filename": "icon-tenders.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-trailblazers.webp",
+      "category": "food",
+      "name": "Trailblazers",
+      "filename": "icon-trailblazers.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-vege.webp",
+      "category": "food",
+      "name": "Vege",
+      "filename": "icon-vege.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-waffles.webp",
+      "category": "food",
+      "name": "Waffles",
+      "filename": "icon-waffles.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-wing.webp",
+      "category": "food",
+      "name": "Wing",
+      "filename": "icon-wing.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-wok.webp",
+      "category": "food",
+      "name": "Wok",
+      "filename": "icon-wok.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-wontons.webp",
+      "category": "food",
+      "name": "Wontons",
+      "filename": "icon-wontons.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-wrap.webp",
+      "category": "food",
+      "name": "Wrap",
+      "filename": "icon-wrap.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-yogurt.webp",
+      "category": "food",
+      "name": "Yogurt",
+      "filename": "icon-yogurt.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/restaurant-waiter.svg",
+      "category": "food",
+      "name": "Restaurant Waiter",
+      "filename": "restaurant-waiter.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/soup-svgrepo-com.svg",
+      "category": "food",
+      "name": "Soup Svgrepo Com",
+      "filename": "soup-svgrepo-com.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/takeaway-fill-svgrepo-com.svg",
+      "category": "food",
+      "name": "Takeaway Fill Svgrepo Com",
+      "filename": "takeaway-fill-svgrepo-com.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/socialmedia/fb.svg",
+      "category": "socialmedia",
+      "name": "Fb",
+      "filename": "fb.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/socialmedia/icon-fb.webp",
+      "category": "socialmedia",
+      "name": "Fb",
+      "filename": "icon-fb.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/socialmedia/icon-ig.webp",
+      "category": "socialmedia",
+      "name": "Ig",
+      "filename": "icon-ig.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/socialmedia/ig.svg",
+      "category": "socialmedia",
+      "name": "Ig",
+      "filename": "ig.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/socialmedia/tiktok-logo.webp",
+      "category": "socialmedia",
+      "name": "Tiktok Logo",
+      "filename": "tiktok-logo.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/socialmedia/tk.svg",
+      "category": "socialmedia",
+      "name": "Tk",
+      "filename": "tk.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/socialmedia/whatsapp.svg",
+      "category": "socialmedia",
+      "name": "Whatsapp",
+      "filename": "whatsapp.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/socialmedia/yt.svg",
+      "category": "socialmedia",
+      "name": "Yt",
+      "filename": "yt.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/ui/apple.svg",
+      "category": "ui",
+      "name": "Apple",
+      "filename": "apple.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/ui/bell.svg",
+      "category": "ui",
+      "name": "Bell",
+      "filename": "bell.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/ui/cart0.svg",
+      "category": "ui",
+      "name": "Cart0",
+      "filename": "cart0.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/ui/cart1.svg",
+      "category": "ui",
+      "name": "Cart1",
+      "filename": "cart1.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/ui/cart2.svg",
+      "category": "ui",
+      "name": "Cart2",
+      "filename": "cart2.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/ui/cart3.svg",
+      "category": "ui",
+      "name": "Cart3",
+      "filename": "cart3.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/ui/cart4.svg",
+      "category": "ui",
+      "name": "Cart4",
+      "filename": "cart4.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/ui/close.svg",
+      "category": "ui",
+      "name": "Close",
+      "filename": "close.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/ui/home.svg",
+      "category": "ui",
+      "name": "Home",
+      "filename": "home.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/ui/home1.svg",
+      "category": "ui",
+      "name": "Home1",
+      "filename": "home1.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/ui/icon-loc.webp",
+      "category": "ui",
+      "name": "Loc",
+      "filename": "icon-loc.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/ui/icon-search.webp",
+      "category": "ui",
+      "name": "Search",
+      "filename": "icon-search.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/ui/location.svg",
+      "category": "ui",
+      "name": "Location",
+      "filename": "location.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/ui/phone.svg",
+      "category": "ui",
+      "name": "Phone",
+      "filename": "phone.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/ui/search.svg",
+      "category": "ui",
+      "name": "Search",
+      "filename": "search.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/ui/settings-svgrepo-com.svg",
+      "category": "ui",
+      "name": "Settings Svgrepo Com",
+      "filename": "settings-svgrepo-com.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/ui/settings.svg",
+      "category": "ui",
+      "name": "Settings",
+      "filename": "settings.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-dessert.webp",
+      "category": "white",
+      "name": "Dessert",
+      "filename": "icon-dessert.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-beer.webp",
+      "category": "food",
+      "name": "Beer",
+      "filename": "icon-beer.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-champagne.webp",
+      "category": "food",
+      "name": "Champagne",
+      "filename": "icon-champagne.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-coffee2.webp",
+      "category": "food",
+      "name": "Coffee2",
+      "filename": "icon-coffee2.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-drinks-w.webp",
+      "category": "food",
+      "name": "Drinks W",
+      "filename": "icon-drinks-w.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-drinks.webp",
+      "category": "food",
+      "name": "Drinks",
+      "filename": "icon-drinks.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-fb.webp",
+      "category": "food",
+      "name": "Fb",
+      "filename": "icon-fb.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-fruitglass.webp",
+      "category": "food",
+      "name": "Fruitglass",
+      "filename": "icon-fruitglass.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-glass.webp",
+      "category": "food",
+      "name": "Glass",
+      "filename": "icon-glass.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-ig.webp",
+      "category": "food",
+      "name": "Ig",
+      "filename": "icon-ig.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-loc.webp",
+      "category": "food",
+      "name": "Loc",
+      "filename": "icon-loc.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-scotch.webp",
+      "category": "food",
+      "name": "Scotch",
+      "filename": "icon-scotch.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-search.webp",
+      "category": "food",
+      "name": "Search",
+      "filename": "icon-search.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-shots.webp",
+      "category": "food",
+      "name": "Shots",
+      "filename": "icon-shots.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-smoothie.webp",
+      "category": "food",
+      "name": "Smoothie",
+      "filename": "icon-smoothie.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-whiskey.webp",
+      "category": "food",
+      "name": "Whiskey",
+      "filename": "icon-whiskey.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/icon-wine.webp",
+      "category": "food",
+      "name": "Wine",
+      "filename": "icon-wine.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/food/tiktok-logo.webp",
+      "category": "food",
+      "name": "Tiktok Logo",
+      "filename": "tiktok-logo.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-beef-0.webp",
+      "category": "white",
+      "name": "Beef 0",
+      "filename": "icon-beef-0.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-beef.webp",
+      "category": "white",
+      "name": "Beef",
+      "filename": "icon-beef.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-beer.svg",
+      "category": "white",
+      "name": "Beer",
+      "filename": "icon-beer.svg",
+      "format": "svg"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-beer.webp",
+      "category": "white",
+      "name": "Beer",
+      "filename": "icon-beer.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-beerglass.webp",
+      "category": "white",
+      "name": "Beerglass",
+      "filename": "icon-beerglass.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-bread.webp",
+      "category": "white",
+      "name": "Bread",
+      "filename": "icon-bread.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-breakfast.webp",
+      "category": "white",
+      "name": "Breakfast",
+      "filename": "icon-breakfast.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-burger.webp",
+      "category": "white",
+      "name": "Burger",
+      "filename": "icon-burger.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-cabin.webp",
+      "category": "white",
+      "name": "Cabin",
+      "filename": "icon-cabin.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-can.webp",
+      "category": "white",
+      "name": "Can",
+      "filename": "icon-can.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-champagne.webp",
+      "category": "white",
+      "name": "Champagne",
+      "filename": "icon-champagne.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-chicken-0.webp",
+      "category": "white",
+      "name": "Chicken 0",
+      "filename": "icon-chicken-0.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-chicken.webp",
+      "category": "white",
+      "name": "Chicken",
+      "filename": "icon-chicken.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-chocolate.webp",
+      "category": "white",
+      "name": "Chocolate",
+      "filename": "icon-chocolate.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-cigar.webp",
+      "category": "white",
+      "name": "Cigar",
+      "filename": "icon-cigar.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-coffee.webp",
+      "category": "white",
+      "name": "Coffee",
+      "filename": "icon-coffee.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-coffee2.webp",
+      "category": "white",
+      "name": "Coffee2",
+      "filename": "icon-coffee2.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-combo.webp",
+      "category": "white",
+      "name": "Combo",
+      "filename": "icon-combo.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-corn.webp",
+      "category": "white",
+      "name": "Corn",
+      "filename": "icon-corn.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-croissant.webp",
+      "category": "white",
+      "name": "Croissant",
+      "filename": "icon-croissant.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-desserts.webp",
+      "category": "white",
+      "name": "Desserts",
+      "filename": "icon-desserts.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-drinks-w.webp",
+      "category": "white",
+      "name": "Drinks W",
+      "filename": "icon-drinks-w.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-drinks.webp",
+      "category": "white",
+      "name": "Drinks",
+      "filename": "icon-drinks.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-dumplings.webp",
+      "category": "white",
+      "name": "Dumplings",
+      "filename": "icon-dumplings.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-eggs.webp",
+      "category": "white",
+      "name": "Eggs",
+      "filename": "icon-eggs.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-entrancefee.webp",
+      "category": "white",
+      "name": "Entrancefee",
+      "filename": "icon-entrancefee.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-favfood.webp",
+      "category": "white",
+      "name": "Favfood",
+      "filename": "icon-favfood.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-fb.webp",
+      "category": "white",
+      "name": "Fb",
+      "filename": "icon-fb.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-fish.webp",
+      "category": "white",
+      "name": "Fish",
+      "filename": "icon-fish.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-fruit.webp",
+      "category": "white",
+      "name": "Fruit",
+      "filename": "icon-fruit.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-fruitglass.webp",
+      "category": "white",
+      "name": "Fruitglass",
+      "filename": "icon-fruitglass.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-glass.webp",
+      "category": "white",
+      "name": "Glass",
+      "filename": "icon-glass.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-goat-0.webp",
+      "category": "white",
+      "name": "Goat 0",
+      "filename": "icon-goat-0.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-icedtea.webp",
+      "category": "white",
+      "name": "Icedtea",
+      "filename": "icon-icedtea.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-ig.webp",
+      "category": "white",
+      "name": "Ig",
+      "filename": "icon-ig.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-lamb.webp",
+      "category": "white",
+      "name": "Lamb",
+      "filename": "icon-lamb.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-list.webp",
+      "category": "white",
+      "name": "List",
+      "filename": "icon-list.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-loc.webp",
+      "category": "white",
+      "name": "Loc",
+      "filename": "icon-loc.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-lunchspecial.webp",
+      "category": "white",
+      "name": "Lunchspecial",
+      "filename": "icon-lunchspecial.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-milkshake.webp",
+      "category": "white",
+      "name": "Milkshake",
+      "filename": "icon-milkshake.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-nachos.webp",
+      "category": "white",
+      "name": "Nachos",
+      "filename": "icon-nachos.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-noodles.webp",
+      "category": "white",
+      "name": "Noodles",
+      "filename": "icon-noodles.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-pancakes.webp",
+      "category": "white",
+      "name": "Pancakes",
+      "filename": "icon-pancakes.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-pasta.webp",
+      "category": "white",
+      "name": "Pasta",
+      "filename": "icon-pasta.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-pizza.webp",
+      "category": "white",
+      "name": "Pizza",
+      "filename": "icon-pizza.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-platter.webp",
+      "category": "white",
+      "name": "Platter",
+      "filename": "icon-platter.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-pork-0.webp",
+      "category": "white",
+      "name": "Pork 0",
+      "filename": "icon-pork-0.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-quesadillas.webp",
+      "category": "white",
+      "name": "Quesadillas",
+      "filename": "icon-quesadillas.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-ramen.webp",
+      "category": "white",
+      "name": "Ramen",
+      "filename": "icon-ramen.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-rbl.webp",
+      "category": "white",
+      "name": "Rbl",
+      "filename": "icon-rbl.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-ribs.webp",
+      "category": "white",
+      "name": "Ribs",
+      "filename": "icon-ribs.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-rice.webp",
+      "category": "white",
+      "name": "Rice",
+      "filename": "icon-rice.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-rolls.webp",
+      "category": "white",
+      "name": "Rolls",
+      "filename": "icon-rolls.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-rootcrop.webp",
+      "category": "white",
+      "name": "Rootcrop",
+      "filename": "icon-rootcrop.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-rp.webp",
+      "category": "white",
+      "name": "Rp",
+      "filename": "icon-rp.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-rum.webp",
+      "category": "white",
+      "name": "Rum",
+      "filename": "icon-rum.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-salads-w.webp",
+      "category": "white",
+      "name": "Salads W",
+      "filename": "icon-salads-w.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-salads.webp",
+      "category": "white",
+      "name": "Salads",
+      "filename": "icon-salads.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-sandwich-w.webp",
+      "category": "white",
+      "name": "Sandwich W",
+      "filename": "icon-sandwich-w.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-sandwich.webp",
+      "category": "white",
+      "name": "Sandwich",
+      "filename": "icon-sandwich.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-sauce.webp",
+      "category": "white",
+      "name": "Sauce",
+      "filename": "icon-sauce.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-scotch.webp",
+      "category": "white",
+      "name": "Scotch",
+      "filename": "icon-scotch.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-search.webp",
+      "category": "white",
+      "name": "Search",
+      "filename": "icon-search.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-shed.webp",
+      "category": "white",
+      "name": "Shed",
+      "filename": "icon-shed.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-shots.webp",
+      "category": "white",
+      "name": "Shots",
+      "filename": "icon-shots.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-shrimp.webp",
+      "category": "white",
+      "name": "Shrimp",
+      "filename": "icon-shrimp.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-sides.webp",
+      "category": "white",
+      "name": "Sides",
+      "filename": "icon-sides.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-sigcocktails.webp",
+      "category": "white",
+      "name": "Sigcocktails",
+      "filename": "icon-sigcocktails.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-slushie.webp",
+      "category": "white",
+      "name": "Slushie",
+      "filename": "icon-slushie.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-smoothie.webp",
+      "category": "white",
+      "name": "Smoothie",
+      "filename": "icon-smoothie.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-softserve.webp",
+      "category": "white",
+      "name": "Softserve",
+      "filename": "icon-softserve.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-soup.webp",
+      "category": "white",
+      "name": "Soup",
+      "filename": "icon-soup.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-sushi.webp",
+      "category": "white",
+      "name": "Sushi",
+      "filename": "icon-sushi.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-taco.webp",
+      "category": "white",
+      "name": "Taco",
+      "filename": "icon-taco.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-tea.webp",
+      "category": "white",
+      "name": "Tea",
+      "filename": "icon-tea.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-tenders.webp",
+      "category": "white",
+      "name": "Tenders",
+      "filename": "icon-tenders.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-trailblazers.webp",
+      "category": "white",
+      "name": "Trailblazers",
+      "filename": "icon-trailblazers.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-waffles.webp",
+      "category": "white",
+      "name": "Waffles",
+      "filename": "icon-waffles.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-whiskey.webp",
+      "category": "white",
+      "name": "Whiskey",
+      "filename": "icon-whiskey.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-wine.webp",
+      "category": "white",
+      "name": "Wine",
+      "filename": "icon-wine.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-wing.webp",
+      "category": "white",
+      "name": "Wing",
+      "filename": "icon-wing.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-wontons.webp",
+      "category": "white",
+      "name": "Wontons",
+      "filename": "icon-wontons.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-wrap.webp",
+      "category": "white",
+      "name": "Wrap",
+      "filename": "icon-wrap.webp",
+      "format": "webp"
+    },
+    {
+      "url": "https://cdn.ttmenus.com/icons/white/icon-yogurt.webp",
+      "category": "white",
+      "name": "Yogurt",
+      "filename": "icon-yogurt.webp",
+      "format": "webp"
+    }
+  ],
+  "categories": [
+    "activities",
+    "business",
+    "drink",
+    "food",
+    "socialmedia",
+    "ui",
+    "white"
+  ],
+  "baseUrl": "https://cdn.ttmenus.com/icons",
+  "version": "1.0.0",
+  "generated": "auto"
+}

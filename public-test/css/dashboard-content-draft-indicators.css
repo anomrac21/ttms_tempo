@@ -1,0 +1,87 @@
+/* Unpublished CMS content draft indicators (admin-site only) */
+
+.menu-content-draft-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 999px;
+  background: #f59e0b;
+  color: #1a1a1a;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 4px rgba(245, 158, 11, 0.45);
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.menu-content-draft-badge .fa {
+  font-size: 0.72rem;
+  line-height: 1;
+}
+
+.menu-content-draft-badge--title-row {
+  margin-left: 0.15rem;
+}
+
+.menu-content-draft-badge--inline {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-left: 0.35rem;
+  vertical-align: middle;
+}
+
+.menu-content-draft-badge--inline .fa {
+  font-size: 0.62rem;
+}
+
+.menu-content-draft-badge.hidden,
+.menu-content-draft-badge[hidden] {
+  display: none !important;
+}
+
+.menu-item-title-row > .menu-content-draft-badge--title-row {
+  order: 2;
+}
+
+.menu-item-actions__option--edit .menu-content-draft-badge--inline {
+  display: none;
+}
+
+.menu-item-actions__option--edit.has-cms-draft .menu-content-draft-badge--inline {
+  display: inline-flex;
+}
+
+.menu-item-edit-modal__header {
+  gap: 0.5rem;
+}
+
+.menu-content-draft-badge--modal {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.menu-content-draft-badge--modal:hover,
+.menu-content-draft-badge--modal:focus-visible {
+  background: #fbbf24;
+  outline: 2px solid rgba(251, 191, 36, 0.45);
+  outline-offset: 2px;
+}
+
+.menu-content-draft-badge--modal.is-loading {
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.menu-item-edit-modal__title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-width: 0;
+  flex: 1 1 auto;
+}

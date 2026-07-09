@@ -1,0 +1,213 @@
+/**
+ * Hero / slideshow CTAs — same chip system as .contactinfo
+ */
+
+.hero_logo_container,
+.hero-content,
+.social-share-btn-container,
+.client-tour-slideshow {
+    --contact-cta-radius: 16px;
+    --contact-cta-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
+    --contact-cta-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.35);
+    --contact-cta-accent-a: color-mix(in srgb, var(--selected-button-color2, #b56024) 88%, #fff);
+    --contact-cta-accent-b: color-mix(in srgb, var(--selected-button-color3, #fcd000) 75%, #fff);
+    --contact-cta-accent-border: color-mix(in srgb, var(--selected-button-color3, #fcd000) 55%, #fff);
+    --contact-cta-ink: #1a1208;
+    --contact-cta-ink-muted: rgba(26, 18, 8, 0.82);
+}
+
+.hero_logo_container .contact-cta,
+.hero-content .contact-cta,
+.social-share-btn-container .contact-cta,
+.client-tour-slideshow .contact-cta {
+    font-family: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65em;
+    border-radius: var(--contact-cta-radius);
+    border: 2px solid var(--contact-cta-accent-border);
+    background: linear-gradient(135deg, var(--contact-cta-accent-a) 0%, var(--contact-cta-accent-b) 100%);
+    color: var(--contact-cta-ink);
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: var(--contact-cta-shadow), 0 0 0 1px rgba(255, 255, 255, 0.12) inset;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    justify-content: center;
+}
+
+.hero_logo_container .contact-cta:hover,
+.hero_logo_container .contact-cta:focus-visible,
+.hero-content .contact-cta:hover,
+.hero-content .contact-cta:focus-visible,
+.social-share-btn-container .contact-cta:hover,
+.social-share-btn-container .contact-cta:focus-visible,
+.client-tour-slideshow .contact-cta:hover,
+.client-tour-slideshow .contact-cta:focus-visible {
+    transform: translateY(-2px) scale(1.02);
+    border-color: #fff;
+    box-shadow: var(--contact-cta-shadow-hover), 0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+    outline: none;
+}
+
+.hero_logo_container .contact-cta:active,
+.hero-content .contact-cta:active,
+.social-share-btn-container .contact-cta:active,
+.client-tour-slideshow .contact-cta:active {
+    transform: translateY(0) scale(0.99);
+}
+
+.hero_logo_container .contact-cta__icon,
+.hero-content .contact-cta__icon,
+.social-share-btn-container .contact-cta__icon,
+.client-tour-slideshow .contact-cta__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.35);
+    color: var(--contact-cta-ink);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.hero_logo_container .contact-cta__icon svg,
+.hero-content .contact-cta__icon svg,
+.social-share-btn-container .contact-cta__icon svg,
+.client-tour-slideshow .contact-cta__icon svg {
+    width: 1.35rem;
+    height: 1.35rem;
+}
+
+.hero_logo_container .contact-cta__icon svg path,
+.hero-content .contact-cta__icon svg path,
+.social-share-btn-container .contact-cta__icon svg path,
+.client-tour-slideshow .contact-cta__icon svg path {
+    fill: currentColor;
+}
+
+.hero_logo_container .contact-cta__copy,
+.hero-content .contact-cta__copy,
+.social-share-btn-container .contact-cta__copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1em;
+    min-width: 0;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.hero_logo_container .contact-cta__title,
+.hero-content .contact-cta__title,
+.social-share-btn-container .contact-cta__title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+.hero_logo_container .contact-cta__hint,
+.hero-content .contact-cta__hint,
+.social-share-btn-container .contact-cta__hint {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--contact-cta-ink-muted);
+}
+
+/* Share */
+.social-share-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 1rem;
+}
+
+.social-share-btn-container .contact-cta--share {padding: 0.2em 0.8em;}
+
+/* Slideshow nav chips */
+.client-tour-slideshow .slideshow-nav.contact-cta--nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 3rem;
+    height: 3rem;
+    min-width: 3rem;
+    padding: 0;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.client-tour-slideshow .slideshow-nav.contact-cta--nav:hover,
+.client-tour-slideshow .slideshow-nav.contact-cta--nav:focus-visible {
+    transform: translateY(-50%) scale(1.05);
+}
+
+.client-tour-slideshow .slideshow-nav.contact-cta--nav:active {
+    transform: translateY(-50%) scale(0.98);
+}
+
+.client-tour-slideshow .slideshow-nav.contact-cta--nav .contact-cta__icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.client-tour-slideshow .slideshow-nav.prev {
+    left: 1rem;
+}
+
+.client-tour-slideshow .slideshow-nav.next {
+    right: 1rem;
+}
+
+/* Share toast */
+.share-notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: var(--contact-cta-radius);
+    border: 2px solid var(--contact-cta-accent-border);
+    box-shadow: var(--contact-cta-shadow);
+    z-index: var(--ttms-z-toast, 10100);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.share-notification.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+@media (max-width: 768px) {
+    .client-tour-slideshow .slideshow-nav.prev {
+        left: 0.5rem;
+    }
+
+    .client-tour-slideshow .slideshow-nav.next {
+        right: 0.5rem;
+    }
+
+    .client-tour-slideshow .slideshow-nav.contact-cta--nav {
+        width: 2.75rem;
+        height: 2.75rem;
+        min-width: 2.75rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-content .contact-cta,
+    .social-share-btn-container .contact-cta,
+    .client-tour-slideshow .contact-cta,
+    .share-notification {
+        transition: none;
+    }
+}

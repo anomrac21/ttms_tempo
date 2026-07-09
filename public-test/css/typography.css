@@ -1,0 +1,266 @@
+/**
+ * TTMenus — unified typography (menu UI, panels, cards, CTAs)
+ */
+
+:root {
+    --ttms-font-sans: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --ttms-font-weight-normal: 400;
+    --ttms-font-weight-medium: 500;
+    --ttms-font-weight-semibold: 600;
+    --ttms-font-weight-bold: 700;
+    --ttms-text-xs: 0.75rem;
+    --ttms-text-sm: 0.875rem;
+    --ttms-text-base: 1em;
+    --ttms-text-lg: 1.125rem;
+    --ttms-leading-tight: 1.25;
+    --ttms-leading-normal: 1.45;
+    --ttms-leading-relaxed: 1.6;
+    --ttms-tracking-tight: -0.01em;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-size-adjust: 100%;
+}
+
+body,
+button,
+input,
+select,
+textarea,
+optgroup {
+    font-family: var(--ttms-font-sans);
+    font-weight: var(--ttms-font-weight-normal);
+    line-height: var(--ttms-leading-normal);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ttms-font-sans);
+    font-weight: var(--ttms-font-weight-semibold);
+    line-height: var(--ttms-leading-tight);
+    letter-spacing: var(--ttms-tracking-tight);
+}
+
+p,
+.menu-summary,
+.menu-item-description,
+.hero-content,
+.hero-content p,
+.hero_logo_container .hero-intro,
+.hero_logo_container .hero-intro p {
+    font-size: var(--ttms-text-xs);
+    line-height: var(--ttms-leading-relaxed);
+}
+
+/* Header category nav */
+.menublock-link__label {
+    font-family: inherit;
+    font-size: 0.62rem;
+    font-weight: var(--ttms-font-weight-semibold);
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+}
+
+.menublock-link--search .menublock-link__label {
+    font-weight: var(--ttms-font-weight-bold);
+}
+
+/* Contact / hero CTAs */
+.contactinfo .contact-cta,
+.hero-content .contact-cta,
+.social-share-btn-container .contact-cta,
+.client-tour-slideshow .contact-cta {
+    font-family: inherit;
+}
+
+.contactinfo .contact-cta__title,
+.hero-content .contact-cta__title,
+.social-share-btn-container .contact-cta__title {
+    font-weight: var(--ttms-font-weight-bold);
+}
+
+.contactinfo .contact-cta__hint,
+.hero-content .contact-cta__hint,
+.social-share-btn-container .contact-cta__hint {
+    font-size: 0.78rem;
+    font-weight: var(--ttms-font-weight-medium);
+}
+
+.contactinfo .location-status-badge {
+    font-family: inherit;
+    font-size: var(--ttms-text-xs);
+    font-weight: var(--ttms-font-weight-semibold);
+    line-height: 1.2;
+}
+
+/* Menu sections */
+.headerstyle h1,
+.headerstyle h1.center.title,
+.headerstyle h2,
+.headerstyle h2 a,
+h1.center.title,
+h2.center.title,
+h2.center.title a,
+.clientad-heading,
+.clientad-heading a {
+    font-family: inherit;
+    font-weight: var(--ttms-font-weight-bold);
+    letter-spacing: var(--ttms-tracking-tight);
+}
+
+.menu-summary {
+    font-size: var(--ttms-text-sm);
+    font-weight: var(--ttms-font-weight-normal);
+}
+
+/* Menu item cards */
+.menu-item-card,
+.menu-item-card .menu-item-title,
+.menu-item-card .menu-item-title a {
+    font-family: inherit;
+}
+
+.menu-item-card .menu-item-title,
+.menu-item-card .menu-item-title a {
+    font-size: 1.15rem;
+    font-weight: var(--ttms-font-weight-bold);
+    line-height: var(--ttms-leading-tight);
+}
+
+.menu-item-card .menu-item-description {
+    font-size: 0.84rem;
+    font-weight: var(--ttms-font-weight-normal);
+}
+
+.menu-item-card .menu-item-price,
+.menu-item-card .menu-item-price-promo {
+    font-weight: var(--ttms-font-weight-bold);
+}
+
+.menu-item-card .menu-item-promo-badge,
+.menu-item-card .sizes li,
+.menu-item-card .flavours li {
+    font-weight: var(--ttms-font-weight-semibold);
+}
+
+.menu-item-card .menu-item-expand-hint {
+    font-size: 0.62rem;
+    font-weight: var(--ttms-font-weight-medium);
+}
+
+/* Search */
+#search,
+#searchbox {
+    font-family: inherit;
+    font-size: var(--ttms-text-base);
+}
+
+/* Side panels */
+#dashboard,
+#account-dashboard {
+    font-family: var(--ttms-font-sans);
+}
+
+#dashboard .dashboardfooter a,
+.account-dashboard-panel-title,
+.account-dashboard-user-info .user-name,
+.account-dashboard-btn__label,
+.login-prompt-content p,
+.login-prompt-button,
+.user-data-title,
+.user-data-empty {
+    font-family: inherit;
+}
+
+.account-dashboard-panel-title {
+    font-size: var(--ttms-text-lg);
+    font-weight: var(--ttms-font-weight-bold);
+}
+
+.account-dashboard-user-info .user-name {
+    font-weight: var(--ttms-font-weight-semibold);
+}
+
+.account-dashboard-user-info .user-email {
+    font-size: var(--ttms-text-sm);
+    font-weight: var(--ttms-font-weight-normal);
+}
+
+.login-prompt-content p {
+    font-size: var(--ttms-text-sm);
+    line-height: var(--ttms-leading-relaxed);
+}
+
+.user-data-title {
+    font-size: var(--ttms-text-base);
+    font-weight: var(--ttms-font-weight-bold);
+}
+
+/* Ads strip labels */
+#homepage-ads-container span,
+#frontpage-ads-container span,
+.menu-ad-promo-label {
+    font-family: inherit;
+    font-size: 0.65rem;
+    font-weight: var(--ttms-font-weight-bold);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.share-notification {
+    font-family: inherit;
+    font-weight: var(--ttms-font-weight-medium);
+}
+
+@media (max-width: 768px) {
+    .menublock-link__label {
+        font-size: 0.58rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: calc(var(--ttms-z-loader, 99999) + 1);
+    padding: 0.75rem 1.25rem;
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

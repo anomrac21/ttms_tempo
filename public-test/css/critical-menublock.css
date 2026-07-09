@@ -1,0 +1,61 @@
+/**
+ * Mobile menublock dropdown — critical path (class toggled in head before paint).
+ * Full styling lives in header.css; this prevents FOUC on first frame.
+ */
+html.ttms-mobile-menublock .main-header .container {
+  overflow: visible;
+}
+
+html.ttms-mobile-menublock .main-header .header-leading {
+  flex: 1 1 auto;
+  min-width: 0;
+  width: 100%;
+}
+
+html.ttms-mobile-menublock .header-menublock-toggle {
+  display: inline-flex !important;
+}
+
+html.ttms-mobile-menublock .main-header .header-nav {
+  position: fixed !important;
+  top: var(--ttms-header-height, 5em);
+  left: 0;
+  right: 0;
+  width: 100%;
+  flex: none !important;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: var(--ttms-z-header-dropdown, 210);
+}
+
+html.ttms-mobile-menublock .main-header.menublock-dropdown-open .header-nav {
+  max-height: none;
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  overflow: visible;
+}
+
+html.ttms-mobile-menublock .main-header.menublock-dropdown-open #menublock {
+  max-height: min(26rem, calc(100svh - var(--ttms-header-height, 5em) - env(safe-area-inset-bottom, 0px)));
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+}
+
+html.ttms-mobile-menublock .main-header.menublock-scrolled-right .dashboard-menu-btn-wrap {
+  flex-basis: var(--ttms-dashboard-btn-slot, 2.6em);
+  width: var(--ttms-dashboard-btn-slot, 2.6em);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+html.ttms-mobile-menublock .main-header.menublock-scrolled-right .dashboard-menu-btn-wrap #dashboardBtn {
+  transform: none;
+}

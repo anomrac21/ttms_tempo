@@ -1,0 +1,647 @@
+/* Account panel + header account button (menu theme) */
+
+#account-dashboard {
+  inset: 0;
+  left: auto;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(30px);
+  display: flex;
+  width: 100vw;
+  height: var(--ttms-overlay-height, 100dvh);
+  max-height: var(--ttms-overlay-height, 100dvh);
+  position: fixed;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s 0.3s;
+  z-index: var(--ttms-z-account-dashboard, 1001);
+  color: var(--text-darker, #222);
+  box-shadow: rgba(0, 0, 0, 0.12) 0 8px 32px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  flex-direction: column;
+  max-width: 600px;
+  transform: translateX(100%);
+  visibility: hidden;
+  pointer-events: none;
+  box-sizing: border-box;
+  padding-top: var(--ttms-safe-top, env(safe-area-inset-top, 0px));
+  padding-bottom: var(--ttms-safe-bottom, env(safe-area-inset-bottom, 0px));
+  overscroll-behavior: none;
+}
+
+#account-dashboard.loader-hide-right {
+  transform: translateX(100%);
+  visibility: hidden;
+  pointer-events: none;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s 0.3s;
+}
+
+#account-dashboard:not(.loader-hide-right) {
+  transform: translateX(0);
+  visibility: visible;
+  pointer-events: auto;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s 0s;
+}
+
+#account-dashboard .body {
+  height: calc(var(--ttms-overlay-height, 100dvh) - 7.2em - var(--ttms-safe-top, env(safe-area-inset-top, 0px)) - var(--ttms-safe-bottom, env(safe-area-inset-bottom, 0px)));
+  display: flex;
+  flex-direction: column;
+  padding-inline: 0.8em;
+  min-height: 0;
+  overflow: hidden;
+}
+
+#account-dashboard .account-dashboard-body-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#dashboard .dashboard-header-trailing {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+#dashboard .dashboard-header-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+#dashboard .dashboard-header-admin-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--main-text-color, #fff);
+  text-decoration: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Logged-in badge over menu dashboard logo */
+.dashboard-menu-btn-wrap {
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.dashboard-menu-btn-wrap #dashboardBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-menu-btn-wrap .account-badge {
+  display: none;
+  position: absolute;
+  bottom: -.5em;
+  right: -.25em;
+  z-index: 2;
+  width: 1.65em;
+  height: 1.65em;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+}
+
+.dashboard-menu-btn-wrap .account-badge .icon.account {
+  width: 0.95em;
+  height: 0.95em;
+  color: var(--success, #28a745);
+}
+
+body.ttms-logged-in .dashboard-menu-btn-wrap .account-badge:not(.account-badge--on-logo) {
+  display: flex;
+}
+
+/* Signed-in badge on venue logo when category nav is scrolled right */
+.account-badge--on-logo {
+  display: none !important;
+  opacity: 0;
+  transform: scale3d(0.82, 0.82, 1);
+  transition:
+    opacity 0.38s var(--ttms-dashboard-slide-ease, cubic-bezier(0.22, 1, 0.36, 1)),
+    transform 0.42s var(--ttms-dashboard-slide-ease, cubic-bezier(0.22, 1, 0.36, 1));
+  backface-visibility: hidden;
+}
+
+body.ttms-logged-in .main-header.menublock-scrolled-right .account-badge--on-logo {
+  display: flex !important;
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+  transition-delay: calc(var(--ttms-dashboard-slide-duration, 0.62s) * 0.35);
+  position: absolute;
+  bottom: -0.35em;
+  right: -0.35em;
+  z-index: 3;
+  width: 1.35em;
+  height: 1.35em;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--success, #28a745);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+}
+
+body.ttms-logged-in .main-header.menublock-scrolled-right .account-badge--on-logo .icon.account {
+  width: 0.75em;
+  height: 0.75em;
+  color: #fff;
+}
+
+body.ttms-logged-in .main-header.menublock-scrolled-right .dashboard-menu-btn-wrap .account-badge:not(.account-badge--on-logo) {
+  display: none !important;
+}
+
+@media (max-width: 768px), ((max-width: 1024px) and (hover: none) and (pointer: coarse)) {
+  body.ttms-logged-in .main-header.menublock-scrolled-right .account-badge--on-logo {
+    display: none !important;
+    opacity: 0;
+  }
+
+  body.ttms-logged-in .dashboard-menu-btn-wrap .account-badge:not(.account-badge--on-logo) {
+    display: flex !important;
+  }
+}
+
+html.ttms-mobile-menublock body.ttms-logged-in .main-header.menublock-scrolled-right .account-badge--on-logo {
+  display: none !important;
+  opacity: 0;
+}
+
+html.ttms-mobile-menublock body.ttms-logged-in .dashboard-menu-btn-wrap .account-badge:not(.account-badge--on-logo) {
+  display: flex !important;
+}
+
+#dashboard .account-panel-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 12px;
+  color: var(--main-text-color, #fff);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#dashboard .account-panel-btn svg.icon {
+  width: 28px;
+  height: 28px;
+}
+
+body.ttms-logged-in #dashboard .account-panel-btn {
+  display: inline-flex;
+  color: var(--success, #28a745);
+  border-color: color-mix(in srgb, var(--success, #28a745) 55%, transparent);
+}
+
+body.ttms-logged-in #dashboard .account-panel-btn svg.icon {
+  color: var(--success, #28a745);
+}
+
+#account-dashboard .header.account-dashboard-panel-header {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75em 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.03);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#account-dashboard .account-dashboard-panel-header-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5em;
+  width: 100%;
+  min-width: 0;
+}
+
+#account-dashboard .account-dashboard-panel-heading {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+#account-dashboard .account-dashboard-panel-title {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary, #222);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#account-dashboard .account-dashboard-panel-tools {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.35rem;
+  position: relative;
+  z-index: 2;
+  padding-left: 0.25em;
+  background: linear-gradient(
+    90deg,
+    transparent 0,
+    rgba(255, 255, 255, 0.92) 0.65em
+  );
+}
+
+#account-dashboard .account-dashboard-user-info--header .user-info-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65em;
+  min-width: 0;
+  max-width: 100%;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 12px;
+  padding: 0.35em 0.45em 0.35em 0;
+}
+
+#account-dashboard .account-dashboard-user-info--header .user-details {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+#account-dashboard .account-dashboard-user-info--header .user-avatar {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--glass-bg, rgba(0, 0, 0, 0.06));
+  border: 1px solid var(--glass-border, rgba(0, 0, 0, 0.1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#account-dashboard .account-dashboard-user-info--header .user-name,
+#account-dashboard .account-dashboard-user-info--header .user-email {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#account-dashboard .user-name {
+  font-weight: 600;
+  color: var(--text-primary, #333);
+}
+
+#account-dashboard .user-email {
+  font-size: 0.8rem;
+  color: var(--text-secondary, rgba(0, 0, 0, 0.6));
+}
+
+@media (max-width: 480px) {
+  #account-dashboard .header.account-dashboard-panel-header {
+    padding: 0.5em 0.6em 0.5em 0.75em;
+  }
+
+  #account-dashboard .account-dashboard-panel-header-inner {
+    gap: 0.35em;
+  }
+
+  #account-dashboard .account-dashboard-user-info--header .user-email {
+    display: none;
+  }
+
+  #account-dashboard .account-dashboard-user-info--header .user-avatar {
+    width: 38px;
+    height: 38px;
+  }
+
+  #account-dashboard .account-dashboard-panel-tools .ttms-icon-btn {
+    width: 2.85rem;
+    height: 2.85rem;
+    min-width: 2.85rem;
+    min-height: 2.85rem;
+  }
+}
+
+/* Header icon buttons (admin, close) — dark icons on light panel */
+#account-dashboard .account-dashboard-panel-header .account-dashboard-panel-tools .ttms-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  color: var(--text-primary, #1a1a1a);
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: none;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+#account-dashboard .account-dashboard-panel-header .account-dashboard-panel-tools .ttms-icon-btn:hover,
+#account-dashboard .account-dashboard-panel-header .account-dashboard-panel-tools .ttms-icon-btn:focus-visible {
+  background: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.22);
+  color: var(--text-primary, #111);
+  transform: none;
+}
+
+#account-dashboard .account-dashboard-panel-header .account-dashboard-panel-tools .account-dashboard-admin-link i {
+  color: inherit;
+  font-size: 1.15rem;
+}
+
+#account-dashboard .account-dashboard-panel-header .account-dashboard-panel-tools .dashboard-header-close-img {
+  width: 1.45rem;
+  height: 1.45rem;
+  object-fit: contain;
+  filter: brightness(0);
+  opacity: 0.82;
+}
+
+#account-dashboard
+  .account-dashboard-panel-header
+  .account-dashboard-panel-tools
+  .dashboard-header-close:hover
+  .dashboard-header-close-img,
+#account-dashboard
+  .account-dashboard-panel-header
+  .account-dashboard-panel-tools
+  .dashboard-header-close:focus-visible
+  .dashboard-header-close-img {
+  opacity: 1;
+}
+
+/* Profile row — link, not a chrome button */
+#account-dashboard .account-dashboard-panel-header .account-dashboard-profile-link {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+#account-dashboard .account-dashboard-panel-header .account-dashboard-profile-link::before {
+  display: none;
+}
+
+#account-dashboard .account-dashboard-panel-header .account-dashboard-profile-link:hover,
+#account-dashboard .account-dashboard-panel-header .account-dashboard-profile-link:focus-visible {
+  background: rgba(0, 0, 0, 0.05);
+  transform: none;
+  box-shadow: none;
+  border: none;
+}
+
+#account-dashboard .account-dashboard-panel-header .user-avatar .icon.account {
+  width: 1.35rem;
+  height: 1.35rem;
+  color: var(--text-primary, #333);
+}
+
+.ttms-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.04);
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.ttms-icon-btn img.dashboard-header-close-img {
+  width: 1.45rem;
+  height: 1.45rem;
+  object-fit: contain;
+}
+
+#account-dashboard .body .account-dashboard-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.6em 1.2em;
+  border-radius: 25px;
+  background: var(--glass-bg, rgba(255, 255, 255, 0.6));
+  border: 1px solid var(--glass-border, rgba(0, 0, 0, 0.12));
+  color: var(--text-primary, #333);
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#account-dashboard-logout-btn .account-dashboard-btn--logout {
+  width: 100%;
+  justify-content: flex-start;
+  border-radius: 14px;
+  border-color: color-mix(in srgb, #b91c1c 22%, transparent);
+  position: relative;
+  z-index: 2;
+}
+
+/* Prevent confirm-dialog click-through to cart WhatsApp order button */
+body.account-dashboard-open #whatsappOrderBtn .btn-place-order,
+body.account-dashboard-open #whatsappOrderBtn .placeOrder {
+  pointer-events: none;
+}
+
+.account-dashboard-login-prompt {
+  padding: 1.5em 0.5em;
+  text-align: center;
+}
+
+.login-prompt-content p {
+  margin: 0 0 1em;
+  color: var(--text-secondary, rgba(0, 0, 0, 0.7));
+  font-size: 0.95rem;
+}
+
+.account-dashboard-user-data {
+  padding: 0.5em 0 1em;
+}
+
+.user-data-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.75em;
+}
+
+.account-dashboard-favorites {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.account-dashboard-favorites-group__title {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary, rgba(0, 0, 0, 0.55));
+  margin: 0 0 0.45em;
+}
+
+.account-dashboard-favorites-group__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.account-dashboard-favorites__row {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15em;
+  max-width: 100%;
+}
+
+.account-dashboard-favorites__row .account-dashboard-favorites__link {
+  flex: 1;
+  min-width: 0;
+}
+
+.account-dashboard-favorites__remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, #b91c1c 28%, var(--glass-border, rgba(0, 0, 0, 0.12)));
+  background: color-mix(in srgb, #fef2f2 40%, var(--glass-bg, #fff));
+  color: #b91c1c;
+  font-size: 1.35rem;
+  line-height: 1;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+.account-dashboard-favorites__remove:hover {
+  background: #fef2f2;
+  border-color: #b91c1c;
+  transform: scale(1.05);
+}
+
+.account-dashboard-favorites__remove:active {
+  transform: scale(0.96);
+}
+
+.account-dashboard-favorites__remove:disabled,
+.account-dashboard-favorites__remove.is-busy {
+  opacity: 0.55;
+  cursor: wait;
+  pointer-events: none;
+}
+
+.account-dashboard-favorites__remove span {
+  display: block;
+  margin-top: -0.08em;
+}
+
+.account-dashboard-favorites__link .fav-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.account-dashboard-favorites img {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.user-data-empty {
+  font-size: 0.9rem;
+  color: var(--text-secondary, rgba(0, 0, 0, 0.6));
+}
+.hero_logo_container .dashboard-edit-btn{
+  top: 7em;
+  position: relative;
+}
+[data-theme="dark"] #account-dashboard {
+  background: rgba(20, 20, 24, 0.96);
+  color: var(--text-primary, #eee);
+}
+
+[data-theme="dark"] #account-dashboard .header.account-dashboard-panel-header {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+[data-theme="dark"] #account-dashboard .account-dashboard-panel-tools {
+  background: linear-gradient(
+    90deg,
+    transparent 0,
+    rgba(20, 20, 24, 0.96) 0.65em
+  );
+}
+
+[data-theme="dark"]
+  #account-dashboard
+  .account-dashboard-panel-header
+  .account-dashboard-panel-tools
+  .ttms-icon-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: var(--text-primary, #eee);
+}
+
+[data-theme="dark"]
+  #account-dashboard
+  .account-dashboard-panel-header
+  .account-dashboard-panel-tools
+  .ttms-icon-btn:hover,
+[data-theme="dark"]
+  #account-dashboard
+  .account-dashboard-panel-header
+  .account-dashboard-panel-tools
+  .ttms-icon-btn:focus-visible {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+[data-theme="dark"]
+  #account-dashboard
+  .account-dashboard-panel-header
+  .account-dashboard-panel-tools
+  .dashboard-header-close-img {
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+[data-theme="dark"]
+  #account-dashboard
+  .account-dashboard-panel-header
+  .account-dashboard-profile-link:hover,
+[data-theme="dark"]
+  #account-dashboard
+  .account-dashboard-panel-header
+  .account-dashboard-profile-link:focus-visible {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="dark"]
+  #account-dashboard
+  .account-dashboard-panel-header
+  .user-avatar
+  .icon.account {
+  color: var(--text-primary, #eee);
+}

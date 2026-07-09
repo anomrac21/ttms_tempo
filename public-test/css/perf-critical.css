@@ -1,0 +1,44 @@
+/**
+ * Layout stability hints — menu public pages (CLS prevention).
+ */
+#footer {
+  min-height: 4.5rem;
+}
+
+#footerBtns.footer-dock {
+  transform: none;
+}
+
+.single-page-item-card .single-page-content {
+  min-height: 12rem;
+}
+
+.single-page-item-card .single-page-description {
+  min-height: 1.5em;
+}
+
+.single-page-item-card .menu-item-availability {
+  min-height: 2.25rem;
+  box-sizing: border-box;
+}
+
+.single-page-item-card .single-page-add-cart {
+  min-height: 7rem;
+  box-sizing: border-box;
+}
+
+.single-page-unavailable-notice[hidden] {
+  display: none !important;
+  margin: 0;
+}
+
+.single-page-unavailable-notice:not([hidden]) {
+  display: block;
+  margin: 0 0 0.5em;
+  color: #e65100;
+  font-size: 0.95em;
+}
+
+.single-page-item-card .menu-item-title-row {
+  min-height: 2.75rem;
+}

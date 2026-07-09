@@ -1,0 +1,349 @@
+/**
+ * Table / order-type modal (#tableNumberModal) — glass panel matching cart & checkout.
+ */
+
+#tableNumberModal.table-modal-panel {
+    --table-modal-accent: color-mix(in srgb, var(--selected-button-color3, #fcd000) 55%, #fff);
+    --table-modal-ink: var(--main-text-color, #fff);
+    --table-modal-ink-muted: color-mix(in srgb, var(--main-text-color, #fff) 62%, transparent);
+    --table-modal-whatsapp: #25d366;
+    --table-modal-whatsapp-dark: #128c7e;
+    background:
+        radial-gradient(120% 80% at 50% -10%, color-mix(in srgb, var(--button-color1, #1a1a2e) 55%, transparent), transparent 55%),
+        rgba(0, 0, 0, 0.72);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    padding: max(0.75rem, env(safe-area-inset-top, 0)) max(0.75rem, env(safe-area-inset-right, 0))
+        max(0.75rem, env(safe-area-inset-bottom, 0)) max(0.75rem, env(safe-area-inset-left, 0));
+}
+
+#tableNumberModal.table-modal-panel .table-modal-container {
+    max-width: min(100%, 28rem);
+    transform: translateY(12px) scale(0.98);
+    transition:
+        transform 0.28s ease,
+        opacity 0.28s ease;
+}
+
+#tableNumberModal.table-modal-panel:not(.hide) .table-modal-container {
+    transform: translateY(0) scale(1);
+}
+
+#tableNumberModal.table-modal-panel .table-modal-content {
+    background:
+        radial-gradient(120% 70% at 50% -5%, color-mix(in srgb, var(--button-color1, #1a1a2e) 50%, transparent), transparent 52%),
+        linear-gradient(180deg, color-mix(in srgb, var(--main-bg, #0a0a0f) 88%, #000) 0%, var(--main-bg, #0a0a0f) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 1.25rem;
+    box-shadow:
+        0 24px 64px rgba(0, 0, 0, 0.48),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+}
+
+#tableNumberModal.table-modal-panel .table-modal-header {
+    padding: 1rem 1rem 0.85rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--header-bg-color, #111) 78%, rgba(255, 255, 255, 0.08)) 0%,
+        color-mix(in srgb, var(--header-bg-color, #111) 92%, rgba(0, 0, 0, 0.2)) 100%
+    );
+}
+
+#tableNumberModal.table-modal-panel .table-modal-header-left {
+    gap: 0.75rem;
+    min-width: 0;
+}
+
+#tableNumberModal.table-modal-panel .table-modal-logo-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+#tableNumberModal.table-modal-panel .table-modal-logo {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    box-shadow: none;
+}
+
+#tableNumberModal.table-modal-panel .table-modal-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: var(--table-modal-ink);
+}
+
+#tableNumberModal.table-modal-panel .table-modal-subtitle {
+    margin-top: 0.2rem;
+    font-size: 0.82rem;
+    color: var(--table-modal-ink-muted);
+}
+
+#tableNumberModal.table-modal-panel .table-modal-close {
+    width: 2.65rem;
+    height: 2.65rem;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--table-modal-ink);
+    font-size: 1.15rem;
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+#tableNumberModal.table-modal-panel .table-modal-close:hover,
+#tableNumberModal.table-modal-panel .table-modal-close:focus-visible {
+    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 255, 255, 0.28);
+    transform: translateY(-1px);
+    outline: none;
+}
+
+#tableNumberModal.table-modal-panel .table-modal-close:active {
+    transform: scale(0.96);
+}
+
+#tableNumberModal.table-modal-panel .table-modal-body {
+    padding: 1rem 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#tableNumberModal.table-modal-panel .location-display-section {
+    margin-bottom: 0;
+}
+
+#tableNumberModal.table-modal-panel .selected-location-display {
+    background: linear-gradient(
+        165deg,
+        rgba(255, 255, 255, 0.08) 0%,
+        rgba(255, 255, 255, 0.03) 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 0.85rem 1rem;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+#tableNumberModal.table-modal-panel .selected-location-info {
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.35rem;
+}
+
+#tableNumberModal.table-modal-panel .selected-location-info strong {
+    font-size: 0.95rem;
+    line-height: 1.35;
+    color: var(--table-modal-ink);
+}
+
+#tableNumberModal.table-modal-panel .selected-location-info small {
+    font-size: 0.8rem;
+    color: var(--table-modal-ink-muted);
+}
+
+#tableNumberModal.table-modal-panel .table-selection-title {
+    margin-bottom: 0.65rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--table-modal-ink-muted);
+}
+
+#tableNumberModal.table-modal-panel .table-buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr));
+    gap: 0.55rem;
+    margin-top: 0;
+}
+
+#tableNumberModal.table-modal-panel .table-buttons-grid button,
+#tableNumberModal.table-modal-panel .table-buttons-grid a {
+    min-height: 3rem;
+    padding: 0.65rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--table-modal-ink);
+    font-size: 0.88rem;
+    font-weight: 600;
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+#tableNumberModal.table-modal-panel .table-buttons-grid button:hover,
+#tableNumberModal.table-modal-panel .table-buttons-grid a:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: color-mix(in srgb, var(--table-modal-accent) 32%, rgba(255, 255, 255, 0.18));
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+}
+
+#tableNumberModal.table-modal-panel .table-buttons-grid button.selected,
+#tableNumberModal.table-modal-panel .table-buttons-grid a.selected,
+#tableNumberModal.table-modal-panel .table-buttons-grid button.tableBtn.selected {
+    background: linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--table-modal-whatsapp) 88%, #fff) 0%,
+        var(--table-modal-whatsapp-dark) 100%
+    );
+    border-color: color-mix(in srgb, var(--table-modal-whatsapp) 65%, #fff);
+    color: #fff;
+    box-shadow: 0 4px 16px color-mix(in srgb, var(--table-modal-whatsapp) 35%, transparent);
+}
+
+#tableNumberModal.table-modal-panel .table-buttons-grid button.takeaway-btn {
+    background: color-mix(in srgb, var(--table-modal-accent) 14%, rgba(255, 255, 255, 0.06));
+    border-color: color-mix(in srgb, var(--table-modal-accent) 35%, rgba(255, 255, 255, 0.14));
+}
+
+#tableNumberModal.table-modal-panel .table-buttons-grid button.takeaway-btn.selected {
+    background: linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--table-modal-accent) 88%, #fff) 0%,
+        color-mix(in srgb, var(--table-modal-accent) 72%, #000) 100%
+    );
+    border-color: color-mix(in srgb, var(--table-modal-accent) 55%, #fff);
+    color: color-mix(in srgb, var(--main-bg, #0a0a0f) 85%, #000);
+    box-shadow: 0 4px 16px color-mix(in srgb, var(--table-modal-accent) 28%, transparent);
+}
+
+#tableNumberModal.table-modal-panel .table-modal-footer {
+    padding: 0.85rem 1rem max(1rem, env(safe-area-inset-bottom, 0));
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--footer-bg-color, #111) 82%, rgba(255, 255, 255, 0.06)) 0%,
+        color-mix(in srgb, var(--footer-bg-color, #111) 96%, #000) 100%
+    );
+    box-shadow: 0 -10px 28px rgba(0, 0, 0, 0.28);
+}
+
+#tableNumberModal.table-modal-panel .order-summary-display {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.85rem;
+    padding: 0.75rem 0.85rem;
+    margin-bottom: 0.75rem;
+}
+
+#tableNumberModal.table-modal-panel .summary-location strong,
+#tableNumberModal.table-modal-panel .summary-order-type strong {
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--table-modal-ink-muted);
+}
+
+#tableNumberModal.table-modal-panel .takeaway-badge {
+    border-radius: 999px;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.78rem;
+    background: color-mix(in srgb, var(--table-modal-accent) 22%, rgba(255, 255, 255, 0.08));
+    border: 1px solid color-mix(in srgb, var(--table-modal-accent) 38%, transparent);
+    color: var(--table-modal-ink);
+}
+
+#tableNumberModal.table-modal-panel .selected-table-display {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--table-modal-accent);
+}
+
+#tableNumberModal.table-modal-panel .table-modal-actions {
+    gap: 0.55rem;
+}
+
+#tableNumberModal.table-modal-panel .btn-confirm-table {
+    flex: 1 1 auto;
+    min-height: 3rem;
+    padding: 0.7rem 1.15rem;
+    border-radius: 999px;
+    border: 1px solid color-mix(in srgb, var(--table-modal-whatsapp) 45%, rgba(255, 255, 255, 0.2));
+    background: linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--table-modal-whatsapp) 92%, #fff) 0%,
+        var(--table-modal-whatsapp-dark) 100%
+    );
+    font-size: 0.95rem;
+    font-weight: 700;
+    box-shadow:
+        0 4px 16px color-mix(in srgb, var(--table-modal-whatsapp) 32%, transparent),
+        inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+#tableNumberModal.table-modal-panel .btn-confirm-table:hover,
+#tableNumberModal.table-modal-panel .btn-confirm-table:focus-visible {
+    transform: translateY(-1px);
+    box-shadow:
+        0 6px 20px color-mix(in srgb, var(--table-modal-whatsapp) 38%, transparent),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+#tableNumberModal.table-modal-panel .btn-cancel-table {
+    flex: 0 0 auto;
+    min-height: 3rem;
+    padding: 0.7rem 1.1rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--table-modal-ink-muted);
+    font-size: 0.88rem;
+    font-weight: 600;
+    width: auto;
+}
+
+#tableNumberModal.table-modal-panel .btn-cancel-table:hover,
+#tableNumberModal.table-modal-panel .btn-cancel-table:focus-visible {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.24);
+    color: var(--table-modal-ink);
+    outline: none;
+}
+
+@media (max-width: 480px) {
+    #tableNumberModal.table-modal-panel .table-modal-container {
+        max-width: 100%;
+    }
+
+    #tableNumberModal.table-modal-panel .table-buttons-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #tableNumberModal.table-modal-panel .table-modal-actions {
+        flex-direction: column-reverse;
+    }
+
+    #tableNumberModal.table-modal-panel .btn-cancel-table,
+    #tableNumberModal.table-modal-panel .btn-confirm-table {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #tableNumberModal.table-modal-panel .table-modal-container,
+    #tableNumberModal.table-modal-panel .table-modal-close,
+    #tableNumberModal.table-modal-panel .table-buttons-grid button,
+    #tableNumberModal.table-modal-panel .btn-confirm-table {
+        transition: none;
+    }
+}

@@ -1,0 +1,60 @@
+/**
+ * TTMenus z-index scale — single source of truth for stacking order.
+ * Lower = further back. Reel slides use --ttms-z-reel-base + index (capped at --ttms-z-reel-max).
+ */
+
+:root {
+    /* Reel / sticky document scroll (below chrome) */
+    --ttms-z-reel-end: 0;
+    --ttms-z-reel-base: 1;
+    --ttms-z-reel-max: 40;
+
+    /* In-slide UI (relative to slide; not global stack) */
+    --ttms-z-reel-inner-bg: 0;
+    --ttms-z-reel-inner-content: 1;
+    --ttms-z-reel-inner-controls: 4;
+    --ttms-z-reel-title-row: 5;
+
+    /* Bottom sticky ads band */
+    --ttms-z-bottom-reel-base: 41;
+    --ttms-z-bottom-reel-max: 44;
+    --ttms-z-bottom-ads-wrap: 45;
+
+    /* Ambient tap feedback (above app overlays; below loader) */
+    --ttms-z-tap-particles: 10105;
+
+    /* Fixed chrome */
+    --ttms-z-footer: 50;
+    --ttms-z-footer-controls: 55;
+    --ttms-z-header: 100;
+    --ttms-z-header-leading: 101;
+    --ttms-z-header-dropdown-backdrop: 205;
+    --ttms-z-header-dropdown: 210;
+
+    /* Page overlays (above header) */
+    --ttms-z-live-menu-hint: 150;
+    --ttms-z-search: 200;
+    --ttms-z-search-bar: 111;
+    --ttms-z-card-controls: 8;
+
+    /* Side panels */
+    --ttms-z-dashboard: 1000;
+    --ttms-z-account-dashboard: 1001;
+    --ttms-z-dashboard-edit: 10001;
+
+    /* Modals & fullscreen viewers */
+    --ttms-z-modal: 10050;
+    --ttms-z-ads-reels-overlay: 10050;
+    --ttms-z-reels-item-modal: 10070;
+    --ttms-z-cart: 10080;
+    --ttms-z-table-modal: 10085;
+    --ttms-z-menu-image-upload: 10090;
+
+    /* Toasts & prompts */
+    --ttms-z-toast: 10100;
+    --ttms-z-notification: 10100;
+    --ttms-z-apple-prompt: 10100;
+
+    /* System */
+    --ttms-z-loader: 99999;
+}

@@ -1,0 +1,56 @@
+/**
+ * Lightweight CSS-only image loading indicator (no extra assets / bandwidth).
+ */
+
+@keyframes ttms-img-throbber-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.menu-item-image,
+.menu-smash-pass-card__img-stage,
+.menu-smash-pass-card__media {
+    position: relative;
+}
+
+.menu-item-image.is-loading::after,
+.menu-smash-pass-card__img-stage.is-loading::after,
+.menu-item-smash-pass:not([data-smash-pass-inited])::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1.65rem;
+    height: 1.65rem;
+    margin: -0.825rem 0 0 -0.825rem;
+    border: 2px solid rgba(255, 255, 255, 0.14);
+    border-top-color: rgba(255, 255, 255, 0.62);
+    border-radius: 50%;
+    animation: ttms-img-throbber-spin 0.75s linear infinite;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.menu-item-smash-pass:not([data-smash-pass-inited])::after {
+    top: 42%;
+}
+
+.menu-item-image.is-loading .menu-item-img,
+.menu-smash-pass-card__img-stage.is-loading .menu-smash-pass-card__img--front {
+    opacity: 0;
+}
+
+.menu-item-image.is-error,
+.menu-smash-pass-card__img-stage.is-error {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .menu-item-image.is-loading::after,
+    .menu-smash-pass-card__img-stage.is-loading::after,
+    .menu-item-smash-pass:not([data-smash-pass-inited])::after {
+        animation: none;
+        border-top-color: rgba(255, 255, 255, 0.35);
+    }
+}

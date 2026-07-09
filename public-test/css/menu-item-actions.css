@@ -1,0 +1,263 @@
+.menu-item-title-row > .menu-item-actions {
+  position: relative;
+  flex-shrink: 0;
+  margin-top: 0.12em;
+  margin-left: auto;
+}
+
+.menu-item-actions__trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.65rem;
+  height: 1.65rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--menu-text-color);
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.menu-item-actions__trigger:hover,
+.menu-item-actions__trigger:focus-visible {
+  color: rgba(255, 255, 255, 0.75);
+  transform: scale(1.08);
+  outline: none;
+}
+
+.menu-item-actions.is-open .menu-item-actions__trigger {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.menu-item-actions__trigger .fa {
+  font-size: 1rem;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.menu-item-actions__menu {
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  right: 0;
+  z-index: calc(var(--ttms-z-card-controls, 8) + 2);
+  min-width: 8.5rem;
+  padding: 0.3rem 0;
+  border-radius: 0.55rem;
+  background: rgba(18, 18, 22, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0.45rem 1.25rem rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+}
+
+.menu-item-actions__menu[hidden] {
+  display: none !important;
+}
+
+.menu-item-actions__option {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0.55rem 0.85rem;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.92);
+  font: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.menu-item-actions__option:hover:not(:disabled),
+.menu-item-actions__option:focus-visible:not(:disabled) {
+  background: rgba(255, 255, 255, 0.08);
+  outline: none;
+}
+
+.menu-item-actions__option:disabled,
+.menu-item-actions__option[aria-disabled="true"] {
+  color: rgba(255, 255, 255, 0.38);
+  cursor: not-allowed;
+}
+
+.menu-item-actions__option--edit {
+  color: #c4b5fd;
+  display: none;
+}
+
+.menu-item-actions__option--edit.is-auth-visible {
+  display: block;
+}
+
+.menu-item-actions__option--edit:hover:not(:disabled),
+.menu-item-actions__option--edit:focus-visible:not(:disabled) {
+  color: #ddd6fe;
+  background: rgba(102, 126, 234, 0.18);
+}
+
+.menu-item-card.menu-reels-slide > .menu-item-title-row > .menu-item-actions {
+  margin-top: 0;
+}
+
+.menu-item-card.menu-reels-slide > .menu-item-title-row > .menu-item-actions__trigger {
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.single-page-item-card > .menu-item-header-content.single-page-header-top .menu-item-title-row > .menu-item-actions {
+  margin-top: 0;
+}
+
+.single-page-item-card > .menu-item-header-content.single-page-header-top .menu-item-title-row > .menu-item-actions__trigger {
+  width: 2rem;
+  height: 2rem;
+}
+
+.menu-reels-item-modal__title-row > .menu-item-actions {
+  margin-top: 0;
+  margin-left: 0.35rem;
+}
+
+.menu-reels-item-modal__title-row .menu-item-actions__trigger {
+}
+
+.menu-reels-item-modal__title-row .menu-item-actions__menu {
+  right: 0;
+}
+
+/* Promotion reels slide title + actions */
+.ads-reels-slide__title-row {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--ttms-z-reel-title-row, 5);
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  width: 100%;
+  min-width: 0;
+  padding-block: 0.5rem;
+  box-sizing: border-box;
+  pointer-events: auto;
+}
+
+.ads-reels-slide__title-row > .menu-item-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.ads-reels-slide__title {
+  margin: 0;
+  font-size: clamp(1rem, 3.5vw, 1.25rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.65);
+}
+
+.ads-reels-slide__title-row > .menu-item-actions {
+  margin-top: 0;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.menu-header.menu-reels-slide > .menu-header__title-row {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: var(--ttms-z-reel-title-row, 5);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.45rem;
+  width: 100%;
+  min-width: 0;
+  padding: 0.75rem 0.65rem 0.35rem 1rem;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.menu-header.menu-reels-slide > .menu-header__title-row > .menu-favorite-btn,
+.menu-header.menu-reels-slide > .menu-header__title-row > .menu-item-actions {
+  margin-top: 0;
+  pointer-events: auto;
+}
+
+.menu-header.menu-reels-slide > .menu-header__title-row > .menu-item-actions {
+  margin-left: auto;
+}
+
+.menu-header.menu-reels-slide > .menu-header__title-row > .menu-favorite-btn {
+  flex-shrink: 0;
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.menu-header.menu-reels-slide > .menu-header__title-row > .menu-item-actions__trigger {
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.menu-header.menu-reels-slide > .menu-header__title-row .menu-item-actions__menu {
+  right: 0;
+}
+
+.main-content .menu-header.list-page-header > .menu-header__title-row {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: var(--ttms-z-card-controls, 8);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.45rem;
+  width: 100%;
+  min-width: 0;
+  padding: 0.75rem 0.65rem 0.35rem 1rem;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.main-content .menu-header.list-page-header > .menu-header__title-row > .menu-item-actions {
+  margin-top: 0;
+  margin-left: auto;
+  pointer-events: auto;
+}
+
+.main-content .menu-header.list-page-header > .menu-header__title-row > .menu-favorite-btn {
+  margin-top: 0;
+  flex-shrink: 0;
+  width: 2.1rem;
+  height: 2.1rem;
+  pointer-events: auto;
+}
+
+.main-content .menu-header.list-page-header > .menu-header__title-row > .menu-item-actions__trigger {
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.main-content .menu-header.list-page-header > .menu-header__title-row .menu-item-actions__menu {
+  right: 0;
+}
+
+.ads-reels-slide__title-row > .menu-favorite-btn {
+  margin-top: 0;
+  flex-shrink: 0;
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.ads-reels-slide:has(.ads-reels-slide__title-row) > span {
+  top: 3.35em;
+}

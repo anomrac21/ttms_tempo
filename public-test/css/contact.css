@@ -1,0 +1,1905 @@
+/**
+ * TTMenus v2 - Contact Info Styles
+ * Modern, user-friendly styling for contact information section
+ */
+
+/* ============================================
+   CONTACT INFO CONTAINER
+   ============================================ */
+
+.contactinfobg {
+    background: linear-gradient(var(--hero-bg-color, #000), var(--hero-bg-color, #000), var(--hero-bg-color, #000), var(--hero-bg-color, #000), var(--hero-bg-color, #000), transparent);
+    z-index: auto;
+    position: relative;
+    padding-bottom: 3em;
+}
+
+.contactinfo {
+    display: block;
+    z-index: var(--ttms-z-reel-inner-content, 1);
+    position: relative;
+    max-width: 640px;
+    margin-inline: auto;
+    color: var(--hero-text-color, #000);
+}
+
+.contactinfo ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 0.65em;
+}
+
+/* Shared CTA design (matches subbtn--notify) */
+.contactinfo {
+    --contact-cta-radius: 16px;
+    --contact-cta-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
+    --contact-cta-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.35);
+    --contact-cta-accent-a: color-mix(in srgb, var(--selected-button-color2, #b56024) 88%, #fff);
+    --contact-cta-accent-b: color-mix(in srgb, var(--selected-button-color3, #fcd000) 75%, #fff);
+    --contact-cta-accent-border: color-mix(in srgb, var(--selected-button-color3, #fcd000) 55%, #fff);
+    --contact-cta-ink: #1a1208;
+    --contact-cta-ink-muted: rgba(26, 18, 8, 0.82);
+}
+
+.contactinfo .contact-cta,
+.contactinfo a.contact-cta,
+.contactinfo button.contact-cta {
+    font-family: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65em;
+    border-radius: var(--contact-cta-radius);
+    border: 2px solid var(--contact-cta-accent-border);
+    background: linear-gradient(135deg, var(--contact-cta-accent-a) 0%, var(--contact-cta-accent-b) 100%);
+    color: var(--contact-cta-ink);
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: var(--contact-cta-shadow), 0 0 0 1px rgba(255, 255, 255, 0.12) inset;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    justify-content: center;
+}
+
+.contactinfo .contact-cta:hover,
+.contactinfo .contact-cta:focus-visible {
+    transform: translateY(-2px) scale(1.02);
+    border-color: #fff;
+    box-shadow: var(--contact-cta-shadow-hover), 0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+    outline: none;
+}
+
+.contactinfo .contact-cta:active {
+    transform: translateY(0) scale(0.99);
+}
+
+.contactinfo .contact-cta__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.35);
+    color: var(--contact-cta-ink);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.contactinfo .contact-cta__icon svg {
+    width: 1.35rem;
+    height: 1.35rem;
+}
+
+.contactinfo .contact-cta__icon svg path {
+    fill: currentColor;
+}
+
+.contactinfo .contact-cta__copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1em;
+    min-width: 0;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.contactinfo .contact-cta__title {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+.contactinfo .contact-cta__hint {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--contact-cta-ink-muted);
+}
+
+/* Icon-only chip */
+.contactinfo .contact-cta--icon {
+    width: 3.25rem;
+    height: 3.25rem;
+    min-width: 3.25rem;
+    padding: 0;
+    justify-content: center;
+    border-radius: 14px;
+}
+
+.contactinfo .contact-cta--icon .contact-cta__icon {
+    width: 2.15rem;
+    height: 2.15rem;
+}
+
+.contactinfo .contact-cta--icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* Row layout helpers */
+.contactinfo .contact-cta-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.55em;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0.15em 0;
+}
+
+/* ============================================
+   LOCATION NAVIGATION
+   ============================================ */
+
+.contactinfo li.locations-nav {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+
+.contactinfo li.locations-nav .location-navigation-container {
+    width: 100%;
+}
+
+.location-navigation-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .25em;
+    padding: 0;
+    position: relative;
+}
+
+.locations-wrapper {
+    flex: 1;
+    max-width: 480px;
+    height: min-content;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.locations {
+    display: flex;
+    gap: 1em;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: .5em 0;
+    margin: 0;
+    width: 100%;
+}
+
+.locations::-webkit-scrollbar {
+    height: .3em;
+}
+
+.locations::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, .1);
+    border-radius: 10px;
+}
+
+.locations::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, .3);
+    border-radius: 10px;
+}
+
+/* Location Items - Modern Card Design */
+.location-item {
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+    background: rgba(255, 255, 255, 5%);
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all .3s ease;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    min-width: calc(100% - 2em);
+    width: calc(100% - 0em);
+    box-sizing: border-box;
+}
+
+.location-item.active-location {
+    background: rgba(76, 175, 80, 10%);
+    border-color: rgba(76, 175, 80, .4);
+    transform: scale(1.02);
+}
+
+/* Location address button — accent CTA */
+.contactinfo .locbtn.contact-cta--location {
+    width: 100%;
+    padding: 0.65em 1em 0.65em 0.75em;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-wrap-mode: wrap;
+}
+
+.contactinfo .locbtn.contact-cta--location .contact-cta__title {
+    font-size: 0.82rem;
+}
+
+.location-item.active-location .locbtn.contact-cta--location {
+    background: linear-gradient(135deg, #4caf50, #388e3c);
+    border-color: color-mix(in srgb, #81c784 70%, #fff);
+    color: #fff;
+    --contact-cta-ink: #fff;
+    --contact-cta-ink-muted: rgba(255, 255, 255, 0.85);
+}
+
+.location-item.active-location .locbtn.contact-cta--location .contact-cta__icon {
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+}
+
+/* Location Info (Call, Status & Delivery) */
+.location-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .8em;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.contactinfo .location-call-btn.contact-cta--icon,
+.contactinfo .location-whatsapp-btn.contact-cta--icon {
+    width: 3rem;
+    height: 3rem;
+    min-width: 3rem;
+}
+
+.contactinfo .location-map-btn.contact-cta--icon {
+    width: 3rem;
+    height: 3rem;
+    min-width: 3rem;
+    background: linear-gradient(135deg, #42a5f5, #1565c0);
+    border-color: color-mix(in srgb, #42a5f5 50%, #fff);
+    color: #fff;
+}
+
+.contactinfo .location-map-btn.contact-cta--icon .contact-cta__icon {
+    width: 2rem;
+    height: 2rem;
+    background: rgba(255, 255, 255, 0.22);
+    color: #fff;
+}
+
+.contactinfo .location-call-btn.contact-cta--icon {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-color: color-mix(in srgb, #667eea 50%, #fff);
+    color: #fff;
+}
+
+.contactinfo .location-whatsapp-btn.contact-cta--icon {
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    border-color: color-mix(in srgb, #25d366 50%, #fff);
+    color: #fff;
+}
+
+.contactinfo .location-call-btn.contact-cta--icon .contact-cta__icon,
+.contactinfo .location-whatsapp-btn.contact-cta--icon .contact-cta__icon {
+    width: 2rem;
+    height: 2rem;
+    background: rgba(255, 255, 255, 0.22);
+    color: #fff;
+}
+
+.location-status {
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+
+.location-status-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5em 1em;
+    border-radius: 12px;
+    font-size: .75em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    transition: all .3s ease;
+    min-width: 80px;
+    min-height: 3rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    /* Button-specific styles */
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background: transparent;
+}
+
+.location-status-badge:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Throbber/Spinner for location status refresh */
+.location-status-badge .throbber {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid currentColor;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: location-status-spin 0.6s linear infinite;
+    margin-right: 6px;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+@keyframes location-status-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.location-status-badge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .2), transparent);
+    transition: left .5s ease;
+}
+
+.location-status-badge:hover::before {
+    left: 100%;
+}
+
+.location-status-badge.open {
+    background: linear-gradient(135deg, rgba(76, 175, 80, .25), rgba(56, 142, 60, .2));
+    color: var(--hero-text-color, #66bb6a);
+    border: 2px solid rgba(76, 175, 80, .5);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.location-status-badge.open:hover {
+    background: linear-gradient(135deg, rgba(76, 175, 80, .35), rgba(56, 142, 60, .3));
+    border-color: rgba(76, 175, 80, .7);
+    box-shadow: 0 4px 12px rgba(76, 175, 80, .4);
+    transform: translateY(-1px);
+}
+
+.location-status-badge.closed {
+    background: linear-gradient(135deg, rgba(244, 67, 54, .25), rgba(198, 40, 40, .2));
+    color: var(--hero-text-color, #ef5350);
+    border: 2px solid rgba(244, 67, 54, .5);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.location-status-badge.closed:hover {
+    background: linear-gradient(135deg, rgba(244, 67, 54, .35), rgba(198, 40, 40, .3));
+    border-color: rgba(244, 67, 54, .7);
+    box-shadow: 0 4px 12px rgba(244, 67, 54, .4);
+    transform: translateY(-1px);
+}
+
+.location-status-badge.soon-open {
+    background: linear-gradient(135deg, rgba(255, 193, 7, .25), rgba(255, 160, 0, .2));
+    color: var(--hero-text-color, #ffc107);
+    border: 1.5px solid rgba(255, 193, 7, .5);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.location-status-badge.soon-open:hover {
+    background: linear-gradient(135deg, rgba(255, 193, 7, .35), rgba(255, 160, 0, .3));
+    border-color: rgba(255, 193, 7, .7);
+    box-shadow: 0 4px 12px rgba(255, 193, 7, .4);
+    transform: translateY(-1px);
+}
+
+.location-status-badge.soon-close {
+    background: linear-gradient(135deg, rgba(255, 152, 0, .25), rgba(255, 111, 0, .2));
+    color: var(--hero-text-color, #ff9800);
+    border: 1.5px solid rgba(255, 152, 0, .5);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.location-status-badge.soon-close:hover {
+    background: linear-gradient(135deg, rgba(255, 152, 0, .35), rgba(255, 111, 0, .3));
+    border-color: rgba(255, 152, 0, .7);
+    box-shadow: 0 4px 12px rgba(255, 152, 0, .4);
+    transform: translateY(-1px);
+}
+
+/* Delivery toggle */
+.contactinfo .delivery-toggle-btn.contact-cta--delivery {
+    padding-inline: .5em;
+    min-height: 3rem;
+    font-size: 0.75rem;
+    background: linear-gradient(135deg, #ff7043, #f57c00);
+    border-color: color-mix(in srgb, #ffab91 55%, #fff);
+    color: #fff;
+    --contact-cta-ink: #fff;
+}
+
+.contactinfo .delivery-toggle-btn.contact-cta--delivery .contact-cta__icon {
+    width: 2rem;
+    height: 2rem;
+    background: rgba(255, 255, 255, 0.22);
+    color: #fff;
+}
+
+.contactinfo .delivery-toggle-btn.contact-cta--delivery svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* Delivery Options */
+.delivery-options {
+    display: flex;
+    gap: .5em;
+    transition: all .3s ease;
+    flex-wrap: wrap;
+    height: 3em;
+}
+
+.delivery-options.hide {
+    display: none !important;
+}
+
+.delivery-option-btn {
+    flex: 1;
+    min-width: 120px;
+    padding: .5em;
+    background: rgba(255, 255, 255, 5%);
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+.delivery-option-btn:hover {
+    background: rgba(255, 255, 255, 10%);
+    border-color: rgba(255, 255, 255, .2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+}
+
+.delivery-option-btn img {
+    max-width: 4em;
+    max-height: 32px;
+    object-fit: contain;
+}
+
+.delivery-option-btn--fooddrop {
+    padding: 0;
+    width: 8em;
+    background: #7881be;
+}
+
+.delivery-option-btn--nm {
+    padding: 0;
+    width: 8em;
+    background: #e8cc45;
+}
+
+/* Location carousel nav */
+.contactinfo .btn-nav-location.contact-cta--nav {
+    height: -webkit-fill-available;
+    min-width: auto;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    justify-content: center;
+    color: var(--contact-cta-ink);
+}
+
+.contactinfo .btn-nav-location.contact-cta--nav .contact-cta__icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.contactinfo .btn-nav-location.contact-cta--nav svg {
+    width: 1.35rem;
+    height: 1.35rem;
+}
+
+.contactinfo .btn-nav-location.contact-cta--nav svg path {
+    fill: currentColor;
+}
+
+.contactinfo .btn-nav-location.contact-cta--nav:disabled,
+.contactinfo .btn-nav-location.contact-cta--nav[disabled] {
+    opacity: 0.35;
+    cursor: not-allowed;
+    pointer-events: none;
+    transform: none;
+    box-shadow: none;
+}
+
+/* ============================================
+   SOCIAL MEDIA SECTION
+   ============================================ */
+
+.socialmedia.contact-cta-row {
+    padding: 0.2em 0;
+}
+
+.contactinfo .socialmedia .contact-cta--social,
+.contactinfo .socialmedia a.social.btn {
+    width: 3.25rem;
+    height: 3.25rem;
+    min-width: 3.25rem;
+    padding: 0;
+    justify-content: center;
+    border-radius: 14px;
+    color: var(--contact-cta-ink);
+}
+
+.contactinfo .socialmedia .contact-cta--social .contact-cta__icon,
+.contactinfo .socialmedia a.social.btn svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.contactinfo .socialmedia .contact-cta--social svg,
+.contactinfo .socialmedia a.social.btn svg {
+    width: 1.45rem;
+    height: 1.45rem;
+}
+
+.contactinfo .socialmedia .contact-cta--social svg path,
+.contactinfo .socialmedia a.social.btn svg path {
+    fill: currentColor;
+}
+
+.contactinfo .subscribe--install {
+    width: 100%;
+    justify-content: center;
+}
+
+.contactinfo .contact-cta--install {
+    min-width: min(100%, 17.5rem);
+    padding: 0.65em 1.1em 0.65em 0.85em;
+    background: linear-gradient(135deg, #5c6bc0, #3949ab);
+    border-color: color-mix(in srgb, #7986cb 55%, #fff);
+    color: #fff;
+    --contact-cta-ink: #fff;
+    --contact-cta-ink-muted: rgba(255, 255, 255, 0.85);
+}
+
+.contactinfo .contact-cta--install .contact-cta__icon {
+    background: rgba(255, 255, 255, 0.22);
+    color: #fff;
+}
+
+/* Notify button uses shared CTA + subscribed state */
+.subscribe .subbtn--notify.contact-cta {
+    min-width: min(100%, 17.5rem);
+    max-width: 100%;
+    padding: 0.7em 1.15em 0.7em 0.85em;
+}
+
+/* ============================================
+   CONTACT BUTTONS (WhatsApp & Phone)
+   ============================================ */
+
+.contact.contact-cta-row {
+    display: flex;
+    padding: 0.2em 0;
+}
+
+.contact .contact-cta--whatsapp {
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    border-color: color-mix(in srgb, #25d366 55%, #fff);
+    color: #fff;
+    min-width: min(100%, 10.5rem);
+    padding: 0.6em 1em;
+}
+
+.contact .contact-cta--whatsapp .contact-cta__icon {
+    background: rgba(255, 255, 255, 0.22);
+    color: #fff;
+}
+
+.contact .contact-cta--phone {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-color: color-mix(in srgb, #667eea 55%, #fff);
+    color: #fff;
+    min-width: min(100%, 10.5rem);
+    padding: 0.6em 1em;
+}
+
+.contact .contact-cta--phone .contact-cta__icon {
+    background: rgba(255, 255, 255, 0.22);
+    color: #fff;
+}
+
+/* ============================================
+   SUBSCRIBE / INSTALL SECTION
+   ============================================ */
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    gap: .8em;
+    flex-wrap: wrap;
+    padding: .5em 0;
+}
+
+/* Notification subscribe — above locations row */
+.contactinfo .subscribe--notifications {
+    padding-top: 0.35em;
+    padding-bottom: 0.5em;
+    margin-top: 0;
+    margin-bottom: 0.15em;
+    width: 100%;
+}
+
+/* Primary notification CTA */
+.subscribe .subbtn--notify {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75em;
+    padding: 0.7em 1.15em 0.7em 0.85em;
+    min-width: min(100%, 17.5rem);
+    max-width: 100%;
+    border-radius: 16px;
+    border: 2px solid color-mix(in srgb, var(--selected-button-color3, #fcd000) 55%, #fff);
+    background: linear-gradient(
+        135deg,
+        color-mix(in srgb, var(--selected-button-color2, #b56024) 88%, #fff) 0%,
+        color-mix(in srgb, var(--selected-button-color3, #fcd000) 75%, #fff) 100%
+    );
+    color: #1a1208;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow:
+        0 4px 18px rgba(0, 0, 0, 0.28),
+        0 0 0 1px rgba(255, 255, 255, 0.12) inset;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.subscribe .subbtn--notify:hover,
+.subscribe .subbtn--notify:focus-visible {
+    transform: translateY(-2px) scale(1.02);
+    border-color: #fff;
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.35),
+        0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+    outline: none;
+}
+
+.subscribe .subbtn--notify:active {
+    transform: translateY(0) scale(0.99);
+}
+
+.subscribe .subbtn--notify .contact-cta__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.35);
+    color: #1a1208;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.subscribe .subbtn--notify .contact-cta__icon svg {
+    width: 1.35rem;
+    height: 1.35rem;
+}
+
+.subscribe .subbtn--notify .contact-cta__copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1em;
+    min-width: 0;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.subscribe .subbtn--notify .contact-cta__title {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+.subscribe .subbtn--notify .contact-cta__hint {
+    font-size: 0.78rem;
+    font-weight: 500;
+    opacity: 0.82;
+}
+
+.subscribe .subbtn--notify.subscribed {
+    background: linear-gradient(
+        135deg,
+        color-mix(in srgb, #22c55e 35%, rgba(255, 255, 255, 0.12)) 0%,
+        color-mix(in srgb, #16a34a 25%, rgba(255, 255, 255, 0.08)) 100%
+    );
+    border-color: color-mix(in srgb, #4ade80 70%, transparent);
+    color: var(--hero-text-color, #fff);
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.22);
+}
+
+.subscribe .subbtn--notify.subscribed .contact-cta__icon {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--hero-text-color, #fff);
+}
+
+.subscribe .subbtn--notify.subscribed .contact-cta__hint {
+    opacity: 0.75;
+}
+
+.subscribe .btn,
+.subscribe .subbtn:not(.subbtn--notify) {
+    display: flex;
+    align-items: center;
+    gap: .6em;
+    padding: .8em 1.2em;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 10%), rgba(255, 255, 255, 5%));
+    border: 2px solid rgb(123 123 123 / 15%);
+    border-radius: 14px;
+    color: var(--hero-text-color, #fff);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: .9em;
+    transition: all .3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    min-width: 140px;
+    justify-content: center;
+}
+
+.subscribe .btn:hover,
+.subscribe .subbtn:not(.subbtn--notify):hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 15%), rgba(255, 255, 255, 10%));
+    border-color: rgba(255, 255, 255, .3);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .3);
+}
+
+.subscribe .subbtn:not(.subbtn--notify) {
+    min-width: 160px;
+}
+
+.subscribe .btn img,
+.subscribe .subbtn img {
+    width: 24px;
+    height: 24px;
+    max-width: 24px;
+    max-height: 24px;
+}
+
+/* Install row: only one CTA visible; row hidden when neither applies */
+.contactinfo .subscribe--install.hide {
+    display: none !important;
+}
+
+.contactinfo .subscribe--install .contact-cta.hide {
+    display: none !important;
+}
+
+/* ============================================
+   APPLE INSTRUCTIONS MODAL
+   ============================================ */
+
+#SubBtnItems {
+    margin-top: 1em;
+}
+
+#SubBtnItems.hide {
+    display: none !important;
+}
+
+#appleMessage {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: var(--ttms-overlay-height, 100dvh);
+    max-height: var(--ttms-overlay-height, 100dvh);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(20, 20, 30, 0.98));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: var(--ttms-z-modal, 10050);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: max(1em, env(safe-area-inset-top, 0)) max(1em, env(safe-area-inset-right, 0)) max(1em, env(safe-area-inset-bottom, 0)) max(1em, env(safe-area-inset-left, 0));
+    box-sizing: border-box;
+    overflow-y: auto;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+#appleMessage .container {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+#appleMessage .card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#appleMessage .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em 1.5em 1em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.03);
+    flex-shrink: 0;
+}
+
+#appleMessage .header .text {
+    color: var(--hero-text-color, #fff);
+    font-size: 1.2em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin: auto;
+}
+
+#appleMessage .header .text i {
+    font-size: 1.1em;
+}
+
+#appleMessage .appleMsgBtnClose {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--hero-text-color, #fff);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+#appleMessage .appleMsgBtnClose:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+#appleMessage .appleMsgBtnClose i {
+    font-size: 1.2em;
+}
+
+#appleMessage #slides {
+    flex: 1;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    position: relative;
+}
+
+#appleMessage .msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    min-height: 100%;
+    gap: .5em;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#appleMessage .msg.hide {
+    display: none;
+}
+
+#appleMessage .msgtxt {
+    color: var(--hero-text-color, #fff);
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#appleMessage .msgtxt p {
+    margin: 0;
+    color: var(--hero-text-color, #fff);
+}
+
+#appleMessage .msgtxt img.icon {
+}
+
+#appleMessage .msg > p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1em;
+    margin: 0;
+    line-height: 1.5;
+}
+
+#appleMessage .apple_tutorial_img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin: 1em 0;
+}
+
+#appleMessage .appleMsgBtns {
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--hero-text-color, #fff);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin: 0.5em;
+}
+
+#appleMessage .appleMsgBtns:hover,
+#appleMessage .appleMsgBtns:active {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
+#appleMessage .appleMsgBtns i {
+    font-size: 1.2em;
+}
+
+#appleMessage .appleMsgBtnLeft,
+#appleMessage .appleMsgBtnRight {
+    position: relative;
+}
+
+/* Navigation buttons wrapper for better positioning */
+#appleMessage .msg {
+    position: relative;
+}
+
+#appleMessage .msg .appleMsgBtns {
+    z-index: 10;
+}
+#appleMessage .msg-content {
+    display: flex;
+    gap: 1em;
+}
+.appleInstallHide {
+    display: none !important;
+}
+
+.appleInstallHide:not(.hide) {
+    display: flex !important;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 640px) {
+    .contactinfo {
+    }
+
+    .location-item {
+    }
+
+    .location-info {
+        flex-direction: row;
+        gap: .6em;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .location-call-btn {
+    }
+
+    .location-call-btn img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .location-whatsapp-btn {
+    }
+
+    .location-whatsapp-btn img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .location-status {
+    }
+
+    .location-status-badge {
+        font-size: .7em;
+        padding: .45em .9em;
+        min-width: auto;
+    }
+
+    .delivery-toggle-btn {
+    }
+
+    .contact .btn {
+        min-width: 140px;
+        padding: .8em 1.2em;
+        font-size: .9em;
+    }
+
+    .subscribe .btn,
+    .subscribe .subbtn:not(.subbtn--notify) {
+        min-width: 120px;
+        padding: .7em 1em;
+        font-size: .85em;
+    }
+
+    .subscribe .subbtn--notify {
+        min-width: min(100%, 15.5rem);
+        padding: 0.65em 1em 0.65em 0.75em;
+    }
+
+    .subscribe .subbtn--notify .contact-cta__title {
+        font-size: 0.95rem;
+    }
+
+    .btn-nav-location {
+        width: 36px;
+        height: 36px;
+    }
+
+    .btn-nav-location svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Apple Instructions Modal - Mobile */
+    #appleMessage {
+        padding: 0;
+    }
+
+    #appleMessage .container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    #appleMessage .card {
+        border-radius: 0;
+        max-height: 100vh;
+        max-height: 100dvh;
+        height: 100%;
+    }
+
+    #appleMessage .header {
+        padding: 1em 1em 0.8em;
+        flex-shrink: 0;
+    }
+
+    #appleMessage .header .text {
+        font-size: 0.95em;
+        flex-wrap: wrap;
+        gap: 0.3em;
+    }
+
+    #appleMessage .header .text i {
+        font-size: 0.85em;
+    }
+
+    #appleMessage .appleMsgBtnClose {
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+    }
+
+    #appleMessage .appleMsgBtnClose i {
+        font-size: 1em;
+    }
+
+    #appleMessage #slides {
+        padding: 0.8em 0.5em;
+        gap: 0;
+        flex: 1;
+        max-height: calc(100vh - 5em);
+        overflow-y: auto;
+    }
+
+    #appleMessage .msg {
+    }
+
+    #appleMessage .msgtxt {
+        font-size: 1.1em;
+        font-weight: 600;
+        margin-bottom: 0.3em;
+        width: 100%;
+    }
+
+    #appleMessage .msgtxt p {
+        font-size: 1em;
+        line-height: 1.3;
+    }
+
+    #appleMessage .msgtxt img.icon {
+    }
+
+    #appleMessage .msg > p {
+        font-size: 0.85em;
+        padding: 0 0.8em;
+        line-height: 1.4;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    #appleMessage .apple_tutorial_img {
+        border-radius: 12px;
+        width: auto;
+        height: 50vh;
+        object-fit: contain;
+    }
+
+    #appleMessage .appleMsgBtns {
+        width: 42px;
+        height: 42px;
+        margin: 0.2em;
+        flex-shrink: 0;
+    }
+
+    #appleMessage .appleMsgBtns i {
+        font-size: 1em;
+    }
+
+    /* Better button positioning on mobile */
+    #appleMessage .msg {
+    }
+
+    /* Navigation buttons at bottom */
+    #appleMessage .msg .appleMsgBtnLeft,
+    #appleMessage .msg .appleMsgBtnRight {
+        margin: 0;
+    }
+
+    #appleMessage .msg .appleMsgBtnLeft {
+    }
+
+    #appleMessage .msg .appleMsgBtnRight {
+    }
+
+    /* Hide left button on first slide */
+    #appleMessage .msg_1 .appleMsgBtnLeft {
+        display: none;
+    }
+
+    /* Hide right button on last slide */
+    #appleMessage .msg_5 .appleMsgBtnRight {
+        display: none;
+    }
+
+    /* Center single button on last slide */
+    #appleMessage .msg_5 .appleMsgBtnLeft {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Ensure content doesn't overflow */
+    #appleMessage .msg > * {
+        box-sizing: border-box;
+    }
+
+    /* Better image container */
+    #appleMessage .msg {
+    }
+
+    /* Adjust spacing for very small screens */
+    @media (max-height: 600px) {
+        #appleMessage .header {
+            padding: 0.8em 1em 0.6em;
+        }
+
+        #appleMessage #slides {
+            padding: 0.5em 0.5em;
+        }
+
+        #appleMessage .msg {
+        }
+
+        #appleMessage .msgtxt {
+            font-size: 1em;
+        }
+
+        #appleMessage .msg > p {
+            font-size: 0.8em;
+        }
+
+        #appleMessage .apple_tutorial_img {
+            margin: 0.3em 0;
+        }
+    }
+}
+
+@media (min-width: 641px) {
+    .locations {
+    }
+    
+    .location-item {
+    }
+}
+
+@media (min-width: 1024px) {
+    .locations-wrapper {
+        max-width: 600px;
+    }
+    
+    .location-item {
+    }
+}
+
+@media (min-width: 1440px) {
+    .locations-wrapper {
+        max-width: 900px;
+    }
+    
+    .location-item {
+        min-width: calc(33.333% - 1.34em);
+        width: calc(33.333% - 1.34em);
+    }
+}
+
+/* ============================================
+   REELS LOCATION PICKER
+   ============================================ */
+
+.location-picker__header {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.location-picker__eyebrow {
+    margin: 0 0 0.35rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--hero-text-color, #fff) 72%, transparent);
+}
+
+.location-picker__title {
+    margin: 0;
+    margin-block-end: .5em;
+    font-size: large;
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--hero-text-color, #fff);
+}
+
+.location-picker__subtitle {
+    margin: 0.45rem 0 0;
+    font-size: 0.88rem;
+    color: color-mix(in srgb, var(--hero-text-color, #fff) 78%, transparent);
+}
+
+.location-picker__selected {
+    padding: 0.55rem 0.9rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--selected-button-color3, #fcd000) 28%, rgba(0, 0, 0, 0.35));
+    border: 1px solid color-mix(in srgb, var(--selected-button-color3, #fcd000) 45%, transparent);
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    max-width: 100%;
+}
+
+.location-picker__selected-label {
+    font-size: xx-small;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.85;
+}
+
+.location-picker__selected-name {
+    font-size: x-small;
+    font-weight: 700;
+    color: var(--hero-text-color, #fff);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 16rem;
+}
+
+.location-picker__carousel {
+    flex: 1 1 auto;
+    min-height: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.15rem;
+    padding: 0;
+}
+
+.location-picker .locations-wrapper.location-picker__track-wrap {
+    flex: 1;
+    min-width: 0;
+    max-width: none;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.location-picker__list,
+.location-picker .locations.location-picker__list {
+    flex: 1 1 auto;
+    min-height: 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 0.75rem;
+    overflow-x: auto;
+    overflow-y: visible;
+    overscroll-behavior-x: contain;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    margin: 0;
+    scrollbar-width: none;
+}
+
+.location-picker__list::-webkit-scrollbar {
+    display: none;
+}
+
+.location-picker__nav {
+    flex-shrink: 0;
+    align-self: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    min-width: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--hero-text-color, #fff);
+    font-size: 1.05rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: opacity 0.2s ease, background 0.2s ease, transform 0.2s ease;
+    padding: 0;
+}
+
+.location-picker__nav span {
+    margin-top: -0.05rem;
+}
+
+.location-picker__nav:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.18);
+    transform: scale(1.05);
+}
+
+.location-picker__nav:disabled,
+.location-picker__nav.is-disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.location-picker .location-picker-card.location-item {
+    flex-shrink: 0;
+    min-width: calc(100% - 1.5rem);
+    width: calc(100% - 1.5rem);
+    margin: auto;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.location-picker-card[data-picker-clone] {
+    pointer-events: none;
+    user-select: none;
+}
+
+.location-picker-card[data-picker-clone] .location-picker-card__select,
+.location-picker-card[data-picker-clone] .location-picker-card__action,
+.location-picker-card[data-picker-clone] .location-status-badge,
+.location-picker-card[data-picker-clone] .delivery-toggle-btn {
+    pointer-events: none;
+}
+
+.location-picker:not([data-picker-ready]) .location-picker-card,
+.location-picker:not([data-picker-ready]) .location-picker-card__check {
+    transition: none;
+}
+
+.location-picker--aligning .location-picker__list,
+.location-picker--aligning .locations.location-picker__list {
+    scroll-snap-type: none !important;
+    scroll-behavior: auto !important;
+}
+
+.location-picker--aligning .location-picker__track-wrap {
+    opacity: 0;
+}
+
+.location-picker[data-picker-ready] .location-picker__track-wrap {
+    opacity: 1;
+    transition: opacity 0.18s ease;
+}
+
+.location-picker-card {
+    flex-shrink: 0;
+    min-width: calc(100% - 0.5rem);
+    width: calc(100% - 0.5rem);
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    padding: 0;
+    border-radius: 1.1rem;
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: border-color 0.22s ease, box-shadow 0.22s ease, transform 0.22s ease, background 0.22s ease;
+    overflow: hidden;
+}
+
+.location-picker-card__select {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem 0.3rem 0;
+    border: none;
+    background: transparent;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
+    font-family: inherit;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a.location-picker-card__select:hover {
+    color: inherit;
+}
+
+button.location-picker-card__select {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+}
+
+button.location-picker-card__select:hover,
+button.location-picker-card__select:focus-visible {
+    color: inherit;
+}
+
+.location-picker-card__pin {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--hero-text-color, #fff);
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+a.location-picker-card__select:hover .location-picker-card__pin {
+    background: rgba(255, 255, 255, 0.22);
+    transform: scale(1.04);
+}
+
+.location-picker-card__body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    align-items: center;
+}
+
+.location-picker-card__meta {
+    font-size: xx-small;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--hero-text-color, #fff) 70%, transparent);
+}
+
+.location-picker-card__address {
+    font-size: x-small;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--hero-text-color, #fff);
+}
+
+.location-picker-card__hint {
+    font-size: 0.72rem;
+    color: color-mix(in srgb, var(--hero-text-color, #fff) 58%, transparent);
+}
+
+.location-picker-card__closest-tag[hidden],
+.location-picker-card:not(.location-picker-card--closest) .location-picker-card__closest-tag {
+    display: none !important;
+}
+
+.location-picker-card__closest-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 0.25rem;
+    padding: 0.22em 0.6em;
+    border-radius: 999px;
+    font-size: .46em;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1a1400;
+    background: linear-gradient(135deg, #ffe082, #ffc107);
+    box-shadow: 0 2px 8px rgba(255, 193, 7, 0.35);
+    animation: location-picker-closest-pulse 2.2s ease-in-out infinite;
+}
+
+.location-picker-card__closest-tag::before {
+    content: '';
+    width: 0.42rem;
+    height: 0.42rem;
+    border-radius: 50%;
+    background: #e65100;
+    box-shadow: 0 0 0 2px rgba(230, 81, 0, 0.28);
+    flex-shrink: 0;
+}
+
+.location-picker-card--closest {
+    border-color: color-mix(in srgb, #ffc107 72%, #fff);
+    box-shadow:
+        0 10px 28px rgba(0, 0, 0, 0.28),
+        0 0 0 2px color-mix(in srgb, #ffc107 48%, transparent);
+}
+
+.location-picker-card--closest.location-picker-card--selected,
+.location-picker-card--closest.active-location {
+    border-color: color-mix(in srgb, #4caf50 45%, #ffc107);
+    box-shadow:
+        0 10px 28px rgba(0, 0, 0, 0.28),
+        0 0 0 2px color-mix(in srgb, #ffc107 38%, #81c784);
+}
+
+@keyframes location-picker-closest-pulse {
+    0%, 100% { box-shadow: 0 2px 8px rgba(255, 193, 7, 0.35); }
+    50% { box-shadow: 0 2px 14px rgba(255, 193, 7, 0.58); }
+}
+
+.location-picker-card__check {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    color: transparent;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.location-picker-card--selected,
+.location-picker-card.active-location {
+    border-color: color-mix(in srgb, #4caf50 65%, #fff);
+    background: color-mix(in srgb, #4caf50 14%, rgba(255, 255, 255, 0.08));
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28), 0 0 0 1px color-mix(in srgb, #81c784 35%, transparent);
+    transform: scale(1.01);
+}
+
+.location-picker-card--selected .location-picker-card__check,
+.location-picker-card.active-location .location-picker-card__check {
+    background: linear-gradient(135deg, #4caf50, #2e7d32);
+    border-color: #a5d6a7;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.location-picker-card--selected .location-picker-card__hint,
+.location-picker-card.active-location .location-picker-card__hint {
+    color: #a5d6a7;
+    font-weight: 600;
+}
+
+.location-picker-card--selected .location-picker-card__hint::after,
+.location-picker-card.active-location .location-picker-card__hint::after {
+    content: ' · Selected for ordering';
+}
+
+.location-picker-card__footer {
+    padding: 0.55rem 0.75rem 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    overflow: visible;
+}
+
+.location-picker-card__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-picker-card__actions .location-picker-card__status {
+    flex: 0 0 auto;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+}
+
+.location-picker-card__actions .location-status-badge {
+    min-height: 2.65rem;
+    min-width: auto;
+    padding: 0.35em 0.85em;
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
+    border-radius: var(--contact-cta-radius);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.22);
+}
+
+.location-picker-card__actions .contact-cta--location {
+    width: auto;
+    min-width: 0;
+    padding: 0.45em 0.75em;
+    font-size: 0.78rem;
+}
+
+.location-picker-card__actions .contact-cta--icon {
+    width: 2.65rem;
+    height: 2.65rem;
+    min-width: 2.65rem;
+}
+
+.location-picker__section-footer {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: min(100%, 36rem);
+    margin-inline: auto;
+    margin-top: 0.35rem;
+    padding: 0.15rem 0.75rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.location-picker__nearby-btn {
+    position: relative;
+    width: 100%;
+    max-width: 22rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
+    background: transparent;
+    color: var(--hero-text-color, #fff);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.location-picker__nearby-btn-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    width: max-content;
+    margin-inline: auto;
+    padding: 0.15rem 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(
+        135deg,
+        color-mix(in srgb, var(--selected-button-color2, #b56024) 78%, #1a1a2e),
+        color-mix(in srgb, var(--selected-button-color3, #fcd000) 52%, #2d2d44)
+    );
+    border: 1px solid color-mix(in srgb, var(--selected-button-color3, #fcd000) 42%, transparent);
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.14);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    justify-content: center;
+}
+
+.location-picker__nearby-icon {
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.22);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16);
+}
+
+.location-picker__nearby-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.12rem;
+    text-align: left;
+    min-width: 0;
+}
+
+.location-picker__nearby-label {
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    line-height: 1.15;
+}
+
+.location-picker__nearby-hint {
+    font-size: 0.7rem;
+    font-weight: 500;
+    opacity: 0.84;
+    line-height: 1.25;
+}
+
+.location-picker__nearby-btn:hover:not(:disabled) .location-picker__nearby-btn-inner {
+    transform: translateY(-1px);
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.location-picker__nearby-btn:active:not(:disabled) {
+    transform: scale(0.985);
+}
+
+.location-picker__nearby-btn:disabled {
+    cursor: wait;
+    opacity: 0.92;
+}
+
+.location-picker__nearby-btn.is-loading .location-picker__nearby-icon svg {
+    animation: location-status-spin 0.85s linear infinite;
+}
+
+.location-picker__nearby-btn.is-error .location-picker__nearby-btn-inner {
+    background: linear-gradient(135deg, #8b2e2e, #5c1a1a);
+    border-color: rgba(255, 120, 120, 0.42);
+}
+
+.location-picker__nearby-btn.is-error .location-picker__nearby-hint {
+    opacity: 0.95;
+}
+
+.location-picker__footer {
+    flex-shrink: 0;
+}
+
+.location-picker__continue {
+    width: 100%;
+    padding: 0.85em 1em;
+    justify-content: space-between;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--selected-button-color2, #b56024) 90%, #fff), color-mix(in srgb, var(--selected-button-color3, #fcd000) 80%, #fff));
+}
+
+.location-picker__continue:disabled {
+    opacity: 0.45;
+    pointer-events: none;
+    transform: none;
+}
+
+.location-picker__continue-arrow {
+    font-size: 1.35rem;
+    line-height: 1;
+    animation: location-picker-bounce 1.6s ease-in-out infinite;
+}
+
+.location-picker__continue:not(:disabled) .location-picker__continue-arrow {
+    animation-play-state: running;
+}
+
+@keyframes location-picker-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(0.22rem); }
+}
+
+.location-picker__social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.location-picker__empty {
+    text-align: center;
+    color: var(--hero-text-color, #fff);
+    opacity: 0.8;
+}
+
+@media (min-width: 480px) {
+    .location-picker-card {
+        min-width: min(22rem, calc(100% - 1rem));
+        width: min(22rem, calc(100% - 1rem));
+    }
+}
