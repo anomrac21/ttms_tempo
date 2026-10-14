@@ -1,18 +1,20 @@
 theme = '_menus_ttms'
 languageCode = 'en-tt'
+title = 'Tempo Nightclub'
+baseURL = 'https://tempo.ttmenus.com/'
+timeout = '180s'
 
-# Project menu + theme system pages (login, update-ui, 404, admin, etc.)
+# Mount home, generated menu tree, and theme pages (dashboard, locations, api).
 [module]
   [[module.mounts]]
-    source = "content"
+    source = "content/_index.md"
+    target = "content/_index.md"
+  [[module.mounts]]
+    source = "content/.generated"
     target = "content"
   [[module.mounts]]
     source = "themes/_menus_ttms/content"
     target = "content"
-
-
-title = 'Tempo Nightclub'
-baseURL = 'https://tempo.ttmenus.com/'
 
 [markup]
   [markup.goldmark]
@@ -34,6 +36,7 @@ baseURL = 'https://tempo.ttmenus.com/'
   page = ["HTML", "JSON"]
 
 [params]
+  description = "Tempo Nightclub — food, cocktails, and hookah in San Fernando."
   authServiceUrl = "https://auth.ttmenus.com"
   adsServiceUrl = "https://ads.ttmenus.com"
   notifyServiceUrl = "https://notify.ttmenus.com"
@@ -42,11 +45,44 @@ baseURL = 'https://tempo.ttmenus.com/'
   enabled = true
   apiUrl = "https://auth.ttmenus.com/api/v1"
 
+[params.reviews]
+  enabled = true
+  apiUrl = "https://reviews.ttmenus.com/api/v1"
+
 [params.contentManagement]
   enabled = true
   apiUrl = "https://cms.ttmenus.com/api"
   serviceUrl = "https://cms.ttmenus.com"
   clientId = "ttms_tempo"
+
+[params.content]
+  enabled = true
+  apiUrl = "https://cms.ttmenus.com/api"
+  clientId = "ttms_tempo"
+
+[params.menu]
+  multiLocationMenus = false
+
+[params.mapService]
+  url = "https://maps.ttmenus.com"
+  dataSource = "trinidad-tobago"
+
+[params.osrm]
+  url = "https://osrm.ttmenus.com"
+
+[params.orderService]
+  apiUrl = "https://orders.ttmenus.com/api/v1"
+  enabled = true
+  kitchenPrint = false
+  paperWidthMm = 80
+  printerName = ""
+
+[params.deliveryService]
+  apiUrl = "https://delivery.ttmenus.com/api/v1"
+  currency = "TTD"
+  deliveryFee = 0
+  enabled = false
+  wsUrl = "wss://delivery.ttmenus.com/api/v1"
 
 # Menu images (approved uploads) — same stack as menudemo / current clients
 [params.menuImageService]
@@ -58,7 +94,7 @@ baseURL = 'https://tempo.ttmenus.com/'
   enabled = true
   url = "https://thumbor.ttmenus.com"
   sourceBaseUrl = "https://tempo.ttmenus.com"
-  menuImagesUseThumbor = false
+  menuImagesUseThumbor = true
 
 [params.ads]
   clientId = "ttms_tempo"
@@ -75,12 +111,32 @@ baseURL = 'https://tempo.ttmenus.com/'
 # Override theme demo defaults — payments not enabled for Tempo
 [params.paymentService]
   enabled = false
+  apiUrl = "https://pay.tempo.ttmenus.com"
   clientId = "ttms_tempo"
+  currency = "TTD"
+  provider = "wipay"
 
 [params.features]
+  loyverse_connect = false
   payments = false
   delivery = false
   notifications = true
+  analytics_access = false
+  featured = false
+  exclusive_ads = false
+  no_competitor_ads = false
+  unmetered_traffic = false
+
+[params.posintegration]
+  enabled = false
+  provider = ""
+  api_url = ""
+  oauth_url = "https://loyverse-oauth.ttmenus.com"
+  store_id = ""
+  sync_menu = false
+  auto_process_orders = false
+  fallback_to_whatsapp = true
+  loyverse_receipt_mode = "on_payment"
 
 [params.orderingsystem]
   enabled = true

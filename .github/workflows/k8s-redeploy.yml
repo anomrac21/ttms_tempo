@@ -1,17 +1,62 @@
+# Site-repo kick only. This job never talks to kubectl/Helm.
+#
+# Belongs here (cheap, no cluster credentials):
+#   - Path filter: only live-site files trigger a run
+#   - Check HUGO_DEPLOY_TOKEN can dispatch ttms-client-configs
+#   - Report the FIRST CMS deploy event (dashboard "Site requested")
+#   - repository_dispatch hugo-rebuild / restart
+#   - Report kick sent or kick failed
+#
+# Does NOT belong here (needs DigitalOcean kubeconfig + Helm):
+#   - helm upgrade, git.themeRef, pod rollout, /build-info.json
+#   Those stay in ttms-client-configs hugo-rebuild.yml
+#
+# Pushing _menus_ttms does not run this file. Hugo builds in the pod, not here.
 name: Deploy to Kubernetes
 
 on:
   push:
     branches: [master, main]
+    paths:
+      - 'content/**'
+      - 'data/**'
+      - 'static/**'
+      - 'assets/**'
+      - 'themes/**'
+      - 'layouts/**'
+      - 'archetypes/**'
+      - 'hugo.toml'
+      - 'build_menu.sh'
+      - '.gitmodules'
   workflow_dispatch:
+    inputs:
+      mode:
+        description: 'rebuild = pin this SHA and Hugo-build in the pod; restart = rollout only (no new SHA)'
+        required: true
+        default: 'rebuild'
+        type: choice
+        options:
+          - rebuild
+          - restart
 
 permissions:
   contents: read
 
+concurrency:
+  group: k8s-redeploy-${{ github.repository }}
+  cancel-in-progress: true
+
+env:
+  CLUSTER_CLIENT_ID: ttms-tempo
+  DEPLOY_HOSTNAME: tempo.ttmenus.com
+
 jobs:
-  trigger-hugo-deploy:
+  trigger-hugo-rebuild:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout (CMS report script)
+        uses: actions/checkout@v5
+
       - name: Require deploy token
         env:
           HUGO_DEPLOY_TOKEN: ${{ secrets.HUGO_DEPLOY_TOKEN }}
@@ -19,21 +64,89 @@ jobs:
         run: |
           if [ -z "$HUGO_DEPLOY_TOKEN" ] && [ -z "$CLUSTER_REPO_TOKEN" ]; then
             echo "::error::Missing HUGO_DEPLOY_TOKEN (or legacy CLUSTER_REPO_TOKEN)."
-            echo "CPS should set this before the first push. To fix an existing site, run the"
-            echo "hugo-deploy-token-inject workflow in ttms-app-cluster or set the secret manually."
+            echo "Set HUGO_DEPLOY_TOKEN on this repo (PAT with repository_dispatch on ttms-client-configs)."
             exit 1
           fi
 
-      - name: Trigger cluster Hugo rebuild
+      - name: Resolve mode
+        id: mode
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "mode=${{ github.event.inputs.mode }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "mode=rebuild" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Report CMS — site requested deploy
+        env:
+          DEPLOY_EVENTS_INGEST_SECRET: ${{ secrets.DEPLOY_EVENTS_INGEST_SECRET }}
+          DEPLOY_EVENT_SOURCE: k8s-redeploy
+          DEPLOY_SOURCE_SHA: ${{ github.sha }}
+          DEPLOY_SITE_REPO: ${{ github.repository }}
+          DEPLOY_HOSTNAME: ${{ env.DEPLOY_HOSTNAME }}
+        run: |
+          chmod +x ./scripts/report-deploy-event.sh
+          MODE="${{ steps.mode.outputs.mode }}"
+          if [ "$MODE" = "restart" ]; then
+            MSG="Site requested pod restart (no new SHA)"
+          else
+            MSG="Site requested cluster rebuild for ${GITHUB_SHA:0:7}"
+          fi
+          bash ./scripts/report-deploy-event.sh "$CLUSTER_CLIENT_ID" "started" "running" "$MSG"
+
+      - name: Kick cluster Hugo rebuild
+        if: steps.mode.outputs.mode == 'rebuild'
         uses: peter-evans/repository-dispatch@v4
         with:
           token: ${{ secrets.HUGO_DEPLOY_TOKEN || secrets.CLUSTER_REPO_TOKEN }}
           repository: anomrac21/ttms-client-configs
-          event-type: hugo-redeploy
+          event-type: hugo-rebuild
           client-payload: |-
             {
               "cluster_client_id": "ttms-tempo",
+              "mode": "rebuild",
               "environment": "production",
               "source_repo": "${{ github.repository }}",
               "source_sha": "${{ github.sha }}"
             }
+
+      - name: Kick cluster Hugo pod restart
+        if: steps.mode.outputs.mode == 'restart'
+        uses: peter-evans/repository-dispatch@v4
+        with:
+          token: ${{ secrets.HUGO_DEPLOY_TOKEN || secrets.CLUSTER_REPO_TOKEN }}
+          repository: anomrac21/ttms-client-configs
+          event-type: hugo-rebuild
+          client-payload: |-
+            {
+              "cluster_client_id": "ttms-tempo",
+              "mode": "restart",
+              "environment": "production",
+              "source_repo": "${{ github.repository }}"
+            }
+
+      - name: Report CMS — kick sent
+        if: success()
+        env:
+          DEPLOY_EVENTS_INGEST_SECRET: ${{ secrets.DEPLOY_EVENTS_INGEST_SECRET }}
+          DEPLOY_EVENT_SOURCE: k8s-redeploy
+          DEPLOY_SOURCE_SHA: ${{ github.sha }}
+          DEPLOY_SITE_REPO: ${{ github.repository }}
+          DEPLOY_HOSTNAME: ${{ env.DEPLOY_HOSTNAME }}
+        run: |
+          chmod +x ./scripts/report-deploy-event.sh
+          MODE="${{ steps.mode.outputs.mode }}"
+          bash ./scripts/report-deploy-event.sh "$CLUSTER_CLIENT_ID" "dispatch" "success" "Dispatched hugo-rebuild (${MODE}) to ttms-client-configs"
+
+      - name: Report CMS — kick failed
+        if: failure()
+        env:
+          DEPLOY_EVENTS_INGEST_SECRET: ${{ secrets.DEPLOY_EVENTS_INGEST_SECRET }}
+          DEPLOY_EVENT_SOURCE: k8s-redeploy
+          DEPLOY_SOURCE_SHA: ${{ github.sha }}
+          DEPLOY_SITE_REPO: ${{ github.repository }}
+          DEPLOY_HOSTNAME: ${{ env.DEPLOY_HOSTNAME }}
+        run: |
+          chmod +x ./scripts/report-deploy-event.sh
+          bash ./scripts/report-deploy-event.sh "$CLUSTER_CLIENT_ID" "failure" "failure" "Site could not dispatch hugo-rebuild (token or GitHub API)"
+

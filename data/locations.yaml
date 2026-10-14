@@ -1,5 +1,6 @@
 locations:
-  - address: "526 Southern Main Rd"
+  - slug: san-fernando
+    address: "526 Southern Main Rd"
     city: "San Fernando"
     island: "Trinidad"
     latlon: [10.2735, -61.4683]

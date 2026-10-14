@@ -2,6 +2,9 @@
 /public
 /resources/_gen
 /.hugo_build.lock
+/bin
+/content/.generated/**
+!/content/.generated/.gitkeep
 
 # OS files
 .DS_Store
